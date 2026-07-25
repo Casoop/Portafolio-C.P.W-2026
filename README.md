@@ -48,22 +48,22 @@ Portafolio-Codificación de Páginas Web/
 
 ### Unidad 1 · Implementación de control de versiones
 
-| Sesión | Tema         | Qué aprendí                            |      Trabajo      |                  Captura                  |
-| :----: | :----------- | :------------------------------------- | :---------------: | :---------------------------------------: |
-|  S01   | Git y GitHub | _(escribir aquí con palabras propias)_ | [ver](unidad-01/) | [ver](recursos/S01-Historial_Gráfico.png) |
+| Sesión | Tema         | Qué aprendí                                                |                            Trabajo                            |                  Captura                  |
+| :----: | :----------- | :--------------------------------------------------------- | :-----------------------------------------------------------: | :---------------------------------------: |
+|  S01   | Git y GitHub | Aprendí como fusionar ramas y mostrarlo de manera grafica. | [ver](unidad-01-control-versiones/S01-git-y-github/style.css) | [ver](recursos/S01-Historial_Gráfico.png) |
 
 <details>
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
-| Sesión | Tema                           | Qué aprendí                                                   |                  Trabajo                  |                   Captura                    |
-| :----: | :----------------------------- | :------------------------------------------------------------ | :---------------------------------------: | :------------------------------------------: |
-|  S02   | Git colaborativo, la web y XML | Aprendi sobre comandos git para trabajo colaborativo          |             [ver](unidad-02/)             |               [ver](recursos/)               |
-|  S03   | Estructura del documento HTML5 |                                                               |             [ver](unidad-02/)             |               [ver](recursos/)               |
-|  S04   | Texto, enlaces y anclas        | Aprendí sobre texto semántico, tipos de enlaces, anclas y W3C | [ver](unidad-02/sitio-demo/articulo.html) | [ver](recursos/S04-Enlaces_tipo_anclas1.png) |
-|  S05   | Listas y tablas                |                                                               |             [ver](unidad-02/)             |               [ver](recursos/)               |
-|  S06   | Formularios y semántica        |                                                               |             [ver](unidad-02/)             |               [ver](recursos/)               |
-|  S07   | Multimedia                     |                                                               |             [ver](unidad-02/)             |               [ver](recursos/)               |
-|  S08   | SVG y repaso                   |                                                               |             [ver](unidad-02/)             |               [ver](recursos/)               |
+| Sesión | Tema                           | Qué aprendí                                                    |                                Trabajo                                 |                   Captura                    |
+| :----: | :----------------------------- | :------------------------------------------------------------- | :--------------------------------------------------------------------: | :------------------------------------------: |
+|  S02   | Git colaborativo, la web y XML | Aprend sobre comandos git para trabajo colaborativo.           | [ver](unidad-02-html/s02-git_colaborativo,_la_web_y_xml/nosotros.html) |   [ver](recursos/S02-Git_colaborativo.png)   |
+|  S03   | Estructura del documento HTML5 |                                                                |                         [ver](unidad-02-html/)                         |               [ver](recursos/)               |
+|  S04   | Texto, enlaces y anclas        | Aprendí sobre texto semántico, tipos de enlaces, anclas y W3C. |             [ver](unidad-02-html/sitio-demo/articulo.html)             | [ver](recursos/S04-Enlaces_tipo_anclas1.png) |
+|  S05   | Listas y tablas                |                                                                |                         [ver](unidad-02-html/)                         |               [ver](recursos/)               |
+|  S06   | Formularios y semántica        |                                                                |                         [ver](unidad-02-html/)                         |               [ver](recursos/)               |
+|  S07   | Multimedia                     |                                                                |                         [ver](unidad-02-html/)                         |               [ver](recursos/)               |
+|  S08   | SVG y repaso                   |                                                                |                         [ver](unidad-02-html/)                         |               [ver](recursos/)               |
 
 </details>
 
