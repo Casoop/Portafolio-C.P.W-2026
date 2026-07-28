@@ -57,7 +57,7 @@
         <legend>Detalles de matrícula</legend>
         <p>
           <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" /><br /><br />
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" title="Ingrese un número de teléfono valido de 8 digitos"/><br /><br />
         </p>
         <p>
           <label for="fecha">Fecha de inicio:</label>
@@ -66,7 +66,7 @@
 
         <p>
           <label for="edad">Edad:</label>
-          <input type="number" id="edad" name="edad" /><br /><br />
+          <input type="number" id="edad" name="edad" min="15" max="120" step="1"/><br /><br />
         </p>
       </fieldset>
 
@@ -95,7 +95,7 @@
 
       <p>
         <label for="comentarios">Comentarios</label><br>
-        <textarea name="comentarios" id="comentarios" rows="4"></textarea><br><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50" maxlength="200"></textarea><br><br>
       </p>
       
     </main>
