@@ -33,29 +33,53 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Galería</h1>
+    <main id="contenido">
+      <article>
+        <h2>Galería</h2>
 
-      <!--Imagen y sus atributos-->
-      <img
-        src="recursos/S.7_Lab01.jpg"
-        alt="Imagen de la galería de un laboratorio de informática"
-        width="600"
-        height="400"
-      />
-
-      <!--FIGURE: Agrupa un contenido con una explicación-->
-      <figure>
+        <!--Imagen y sus atributos-->
         <img
-          src="recursos/S.7_Lab02.jpg"
+          src="recursos/S.7_Lab01.jpg"
           alt="Imagen de la galería de un laboratorio de informática"
-          width="800"
-          height="500"
+          width="600"
+          height="400"
         />
-        <figcaption>
-          Imagen de la galería de un laboratorio de informática
-        </figcaption>
-      </figure>
+
+        <!--FIGURE: Agrupa un contenido con una explicación-->
+        <figure>
+          <img
+            src="recursos/S.7_Lab02.jpg"
+            alt="Imagen de la galería de un laboratorio de informática"
+            width="800"
+            height="500"
+          />
+          <figcaption>
+            Imagen de la galería de un laboratorio de informática
+          </figcaption>
+        </figure>
+
+        <!--VARIOS FORMATOS: el navegador elige el uno-->
+
+        <figure>
+          <picture>
+            <source
+              srcset="recursos/S.7_Lab01.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="recursos/S.7_Lab02.jpg"
+              type="image/jpeg"
+            />
+            <img
+              src="recursos/S.7_Lab03.jpg"
+              alt="Imagen de la galería de un laboratorio de informática"
+              width="800"
+              height="500"
+            />
+        </figure>
+
+      </article>
+
       <p><a href="#inicio">Volver al inicio de la página</a></p>
     </main>
 
