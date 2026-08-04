@@ -93,12 +93,12 @@ Proyecto propio construido de forma autónoma.
 
 **Decisiones que tomé**
 
-| Decisión                      | Qué elegí  | Por qué                                                                                      |
-| :---------------------------- | :--------- | :------------------------------------------------------------------------------------------- |
-| Tema del sitio                | Batman     | Debido a que he estado leyendo los comics del personaje recientemente                        |
-| Atributo de la lista ordenada | reversed   | Ya que es el mas adecuado para realizar Tops 10                                              |
-| Formatos de imagen usados     | jpg & webp | Son formatos comunmente utilizados en sitios web, especialemente el webp optimizado para web |
-| Formas del gráfico SVG        |            |                                                                                              |
+| Decisión                      | Qué elegí                  | Por qué                                                                                                     |
+| :---------------------------- | :------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Tema del sitio                | Batman                     | Debido a que he estado leyendo los comics del personaje recientemente                                       |
+| Atributo de la lista ordenada | reversed                   | Ya que es el mas adecuado para realizar Tops 10                                                             |
+| Formatos de imagen usados     | jpg & webp                 | Son formatos comunmente utilizados en sitios web, especialemente el webp optimizado para web                |
+| Formas del gráfico SVG        | Buscar el gráfico en linea | Esto fue debido a que al ser una figura compleja lo mejor era buscar una referencia en linea para el mismo. |
 
 **Cómo se ve**
 
