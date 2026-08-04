@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elías GC" />
+    <meta
+      name="description"
+      content="Galeria con fotos, video y audio relacionado a Batman"
+    />
+    <meta
+      name="keywords"
+      content="galeria, images, video, audio, SVG, HTML, CSS, sitio_personal, batman"
+    />
+
+    <title>Listas | El ascenso del murciélago</title>
+
+    <link rel="icon" href="recursos/favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- CABECERA -->
+    <header id="inicio">
+      <h1>El ascenso del murciélago 🦇</h1>
+      <p>Un breve vistazo a la historia de Batman.</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Datos sobre Batman</a></li>
+          <li><a href="galeria.html">Galería multimedia</a></li>
+          <li><a href="contacto.html">Area de sugerencias</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido">
+
+    <article>
+        <h2>Galería multimedia</h2>
+
+        <!--Imagen simple-->
+        <img src="Recursos/BM1_B.jpg" alt="El poster de la película Batman Begins" width="400" height="600">
+
+        <!--Imagen con pie explicativo-->
+        <figure>
+            <img src="Recursos/BM2_TDK.jpg" alt="El poster de la película The Dark Knight" width="400" height="600">
+            <figcaption>El poster de la película The Dark Knight</figcaption>
+        </figure>
+
+        <!--Imagen con varios formatos-->
+        <figure>
+            <picture>
+                <source srcset="recursos/BM3_TDKR.webp" type="image/webp">
+                <source srcset="recursos/BM3_TDKR.jpg" type="image/jpeg">
+                <img src="Recursos/BM3_TDKR.webp" alt="El poster de la película The Dark Knight Rises" width="400" height="600">
+            </picture>
+        </figure>
+
+        <!--Audio-->
+        <section id="audio">
+            <h3>Intro Batman: The brave and the bold</h3>
+
+            <audio controls>
+                <source src="Recursos/BM_TB&TB.mp3" type="audio/mp3">
+                <source src="Recursos/BM_TB&TB.ogg" type="audio/ogg">
+                <p>Tu navegador no soporta el elemento de audio</p>
+
+                <a href="Recursos/BM_TB&TB.mp3">Descargar el archivo de audio</a>
+            </audio>
+        </section>
+
+        <!--Video-->
+        <section id="video">
+            <h3>Avance de The Batman Part II</h3>
+
+            <video controls width="800" height="500" poster="Recursos/Poster_TB2.jpg" preload="metadata">
+                <source src="Recursos/The_Batman_Part_2.mp4">
+                <source src="Recursos/The_Batman_Part_2.webm">
+                <track src="Recursos/The_Batman_Part_2.vtt" kind="subtitles" srclang="es" label="Español" default>
+                <p>Tu navegador no soporta el elemento de video</p>
+                <a href="Recursos/The_Batman_Part_2.mp4">Descargar el archivo de video</a>
+            </video>
+        </section>
+    </article>
+
+    <article>
+        <h2>Gráficas vectoriales</h2>
+        <section id="Imagen_SVG">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="320" height="196">
+                <g class = "batman_logo" transform = "translate(5,5)">
+
+                    <g class = "background_shield">
+                        <ellipse cx = "150" cy = "93" ry="93" rx = "150.5" stroke="#000000" stroke-width="9" fill = "#FFF200"></ellipse>
+                    </g>
+            
+                    <g class = "bat_symbol">
+                        <path stroke-width = "1" stroke = "#000000" fill = "#000000" d = "M150, 30 L140, 30 L132, 19 C 134, 100 67, 83 102, 20 C0,70 0, 100   70, 156 C 38 125 81 105, 107 145 C 115 127.6 140 127.6 149.5 169 L150, 30 z">
+                        </path>
+                    </g>
+                    
+                    <g class = "bat_symbol_flipped" transform = "scale(-1, 1) translate(-299, 0)">
+                        <path stroke-width = "1" stroke = "#000000" fill = "#000000" d = "M150, 30 L140, 30 L132, 19 C 134, 100 67, 83 102, 20 C0,70 0, 100   70, 156 C 38 125 81 105, 107 145 C 115 127.6 140 127.6 149.5, 169 L150, 30 z">
+                        </path>
+                    </g>
+                </g>
+
+                <!--Texto dentro del SVG-->
+                <text x="155" y="107" text-anchor="middle" font-size="20" fill="#FFF200">
+                    El ascenso del murciélago
+                </text>
+            </svg>
+        </section>
+    </article>
+
+      <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <h2>Contacto</h2>
+      <address>
+        Diseñador del sitio: Elías Guzman Castro<br />
+        Correo de contacto:
+        <a href="mailto:eliguzcas@hotmail.com">eliguzcas@hotmail.com</a><br />
+        Enlace a github:
+        <a href="https://github.com/Casoop" target="_blank" rel="noopener"
+          >Casoop</a
+        >
+      </address>
+      <p>
+        Recursos externos:<br />
+        <a
+          href="https://batman.fandom.com/wiki/Batman_Wiki"
+          target="_blank"
+          rel="noopener"
+          >Wiki de Batman</a
+        ><br />
+        <a
+          href="https://www.dc.com/characters/batman"
+          target="_blank"
+          rel="noopener"
+          >Artículo de Batman en el sitio oficial de DC</a
+        ><br />
+      </p>
+      <p>
+        <small
+          >&copy; 2026 &middot; Casoop &middot; Todos los derechos
+          reservados</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>

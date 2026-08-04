@@ -65,7 +65,6 @@ Portafolio-Codificación de Páginas Web/
 |  S07   | Multimedia                     | Etiquetas, controles de audio y video, formatos y portada u subtítulos                                  |             [ver](unidad-02-html/sitio-demo/galeria.html)              |                [ver](recursos/S07_multimedia.png)                 |
 |  S08   | SVG y repaso                   | SVG-vectorial desde html                                                                                |             [ver](unidad-02-html/sitio-demo/insignia.html)             |             [ver](recursos/S08_Vectorial_a_HTML.png)              |
 
-
 <!--
   ─────────────────────────────────────────────────────────────────────
   DÓNDE PEGAR ESTO
@@ -83,7 +82,7 @@ Portafolio-Codificación de Páginas Web/
 ### El sitio personal
 
 Proyecto propio construido de forma autónoma.
-**Tema del sitio:** _(escribir aquí el tema elegido)_
+**Tema del sitio:** _Un breve vistazo a la historia de Batman._
 
 | Página          | Qué contiene                                                                 | Sesiones aplicadas |                        Ver                         |                 Validación                 |
 | :-------------- | :--------------------------------------------------------------------------- | :----------------: | :------------------------------------------------: | :----------------------------------------: |
@@ -94,12 +93,12 @@ Proyecto propio construido de forma autónoma.
 
 **Decisiones que tomé**
 
-| Decisión                      | Qué elegí | Por qué |
-| :---------------------------- | :-------- | :------ |
-| Tema del sitio                |           |         |
-| Atributo de la lista ordenada |           |         |
-| Formatos de imagen usados     |           |         |
-| Formas del gráfico SVG        |           |         |
+| Decisión                      | Qué elegí                  | Por qué                                                                                                     |
+| :---------------------------- | :------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Tema del sitio                | Batman                     | Debido a que he estado leyendo los comics del personaje recientemente                                       |
+| Atributo de la lista ordenada | reversed                   | Ya que es el mas adecuado para realizar Tops 10                                                             |
+| Formatos de imagen usados     | jpg & webp                 | Son formatos comunmente utilizados en sitios web, especialemente el webp optimizado para web                |
+| Formas del gráfico SVG        | Buscar el gráfico en linea | Esto fue debido a que al ser una figura compleja lo mejor era buscar una referencia en linea para el mismo. |
 
 **Cómo se ve**
 
@@ -115,7 +114,6 @@ _Portada del sitio personal al cerrar la Unidad 2._
 
 **Comprobado en dos navegadores:**
 [Chrome](recursos/sp-navegador-chrome.png) · [Firefox](recursos/sp-navegador-firefox.png)
-
 
 </details>
 

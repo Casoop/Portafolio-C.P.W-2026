@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elías GC" />
+    <meta
+      name="description"
+      content="Area de sugerencias con respecto a la pagina"
+    />
+    <meta
+      name="keywords"
+      content="contacto, sugerencias, HTML, CSS, sitio_personal, batman"
+    />
+
+    <title>Listas | El ascenso del murciélago</title>
+
+    <link rel="icon" href="recursos/favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- CABECERA -->
+    <header id="inicio">
+      <h1>El ascenso del murciélago 🦇</h1>
+      <p>Un breve vistazo a la historia de Batman.</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Datos sobre Batman</a></li>
+          <li><a href="galeria.html">Galería multimedia</a></li>
+          <li><a href="contacto.html">Area de sugerencias</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido">
+
+      <article>
+        <h2>Area de sugerencias</h2>
+
+        <p>
+          Si tienes alguna sugerencia o comentario sobre el sitio, por favor
+          completa el siguiente formulario. Tu opinión es muy valiosa para
+          mejorar la experiencia de los usuarios.
+        </p>
+
+        <form action="#" method="post">
+
+            <!-- GRUPO 1: Datos personales -->
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="James Gordon" />
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required placeholder="jgordon@gcpd.gov" />
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" title="Debe ingresar un número telefónico de 8 dígitos" placeholder="12345678" />
+                </p>
+
+                <p>
+                    <label for="clave">Contraseña *</label>
+                    <input type="password" id="clave" name="clave" required minlength="8" placeholder="********" />
+                    <small>La contraseña debe tener al menos 8 caracteres.</small>
+                </p>
+            </fieldset>
+
+            <!-- GRUPO 2: Detalles de la visita -->
+             <fieldset>
+                <legend>Detalles de tu visita</legend>
+
+                <p>
+                  <label for="fecha">Fecha de tu visita al sitio *</label>
+                  <input type="date" id="fecha" name="fecha" required />
+                </p>
+
+                <p>
+                  <label for="experiencia">Puntua tu experiencia *</label>
+                  <input type="number" id="experiencia" name="experiencia" required min="1" max="5" placeholder="1-5" />
+                  <small>1 = Muy mala, 5 = Excelente</small>
+                </p>
+
+                <p>
+                  <label for="favorita">Dispositivo utilizado *</label>
+                  <select id="favorita" name="favorita" required>
+                    <option value="">Selecciona un dispositivo</option>
+                    <option value="computadora">Computadora personal</option>
+                    <option value="telefono">Teléfono móvil</option>
+                    <option value="tableta">Tableta</option>
+                  </select>
+                </p>
+
+                <fieldset>
+                  <legend>¿Crees que el sitio necesita mejorar? indicanos donde:</legend>
+                  <p>
+                    <input type="checkbox" id="redaccion" name="mejoras" value="redaccion" />
+                    <label for="redaccion">Redacción</label>
+                  </p>
+
+                  <p>
+                    <input type="checkbox" id="accesibilidad" name="mejoras" value="accesibilidad" />
+                    <label for="accesibilidad">Accesibilidad</label>
+                  </p>
+
+                  <p>
+                    <input type="checkbox" id="compatibilidad" name="mejoras" value="compatibilidad" />
+                    <label for="compatibilidad">Compatibilidad con otros navegadores</label>
+                  </p>
+
+                </fieldset>
+             </fieldset>
+
+             <fieldset>
+                <legend>Comentarios adicionales</legend>
+
+                <p>
+                  <label for="comentarios">Comentarios</label>
+                  <textarea id="comentarios" name="comentarios" rows="4" maxlength="300" placeholder="Escribe tu opinión del sitio aquí..."></textarea>
+                  <small>Máximo 300 caracteres.</small>
+                </p>
+              </fieldset>
+
+            <!-- Botón de envío -->
+            <p>
+              <button type="submit">Enviar sugerencia</button>
+              <button type="reset">Limpiar formulario</button>
+            </p>
+          </form>
+      </article> 
+
+      <p><a href="#inicio">Volver al inicio de la página</a></p>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <h2>Contacto</h2>
+      <address>
+        Diseñador del sitio: Elías Guzman Castro<br />
+        Correo de contacto:
+        <a href="mailto:eliguzcas@hotmail.com">eliguzcas@hotmail.com</a><br />
+        Enlace a github:
+        <a href="https://github.com/Casoop" target="_blank" rel="noopener"
+          >Casoop</a
+        >
+      </address>
+      <p>
+        Recursos externos:<br />
+        <a
+          href="https://batman.fandom.com/wiki/Batman_Wiki"
+          target="_blank"
+          rel="noopener"
+          >Wiki de Batman</a
+        ><br />
+        <a
+          href="https://www.dc.com/characters/batman"
+          target="_blank"
+          rel="noopener"
+          >Artículo de Batman en el sitio oficial de DC</a
+        ><br />
+      </p>
+      <p>
+        <small
+          >&copy; 2026 &middot; Casoop &middot; Todos los derechos
+          reservados</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>
