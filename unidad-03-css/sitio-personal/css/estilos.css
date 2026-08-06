@@ -1,0 +1,33 @@
+/*css/estilos.css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*reset básico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora';
+    color: #c7c7c7;
+    background-color: #003366;
+}
+
+h1 {
+    color: #FFD700;
+    font-size: 48px;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+h2 {
+    color: #FFD700;
+    font-size: 30px;
+}
+
+h3 {
+    color: #FFD700;
+    font-size: 26px;
+}
