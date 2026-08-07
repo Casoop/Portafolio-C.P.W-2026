@@ -31,11 +31,11 @@ h1 {
     padding: 30px ;
 }
 
-/*estilos solo a enlaces dento del nava*/
+/*estilos solo a enlaces dentro del nav*/
 nav a {
     color:#fff;
     margin-right: 15px;
-    transition: color 0.3; /*cambio suave al pasar el mouse*/
+    transition: color 0.3s; /*cambio suave al pasar el mouse*/
 }
 
 /*Pseudo-clase: hover*/
@@ -50,14 +50,14 @@ tbody tr:nth-child(even){
 
 /*Pseudo-elemento ::first-letter y ::selection*/
 article p::first-letter {
-    font-style: 32px;
+    font-size: 32px;
     font-weight: bold;
     color: #c55a11;
 }
 
 ::selection {
-    background-color: #e79
-    color white;
+    background-color: #1f4e79;
+    color: white;
 }
 
 /*Agregar familia de fuentes traida de google fonts*/
