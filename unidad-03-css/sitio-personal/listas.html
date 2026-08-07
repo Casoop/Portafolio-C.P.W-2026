@@ -18,13 +18,17 @@
 
     <link rel="icon" href="recursos/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- CABECERA -->
     <header id="inicio">
       <h1>El ascenso del murciélago 🦇</h1>
-      <p>Un breve vistazo a la historia de Batman.</p>
+      <p class="subtitulo">Un breve vistazo a la historia de Batman.</p>
 
       <nav>
         <ul>
@@ -40,14 +44,16 @@
     <main id="contenido">
 
       <!-- Índice con anclas internas -->
-      <h2>En esta página</h2>
-      <ul>
-        <li><a href="#villanos">Villanos principales</a></li>
-        <li><a href="#gadgets">Gadgets de Batman</a></li>
-        <li><a href="#portadores">Otros portadores del manto</a></li>
-        <li><a href="#adaptaciones">Adaptaciones de Batman en diversos medios</a></li>
-        <li><a href="#proyectos">Próximos proyectos con el personaje</a></li>
-      </ul>
+      <div class="menu-anclas">
+        <h2>En esta página</h2>
+        <ul>
+          <li><a href="#villanos">Villanos principales</a></li>
+          <li><a href="#gadgets">Gadgets de Batman</a></li>
+          <li><a href="#portadores">Otros portadores del manto</a></li>
+          <li><a href="#adaptaciones">Adaptaciones de Batman en diversos medios</a></li>
+          <li><a href="#proyectos">Próximos proyectos con el personaje</a></li>
+        </ul>
+      </div>
 
       <article>
         <h2>Datos sobre Batman</h2>
@@ -166,7 +172,7 @@
 
       <!-- Tabla de datos -->
       <section id="proyectos">
-        <table>
+        <table border="3">
           <caption><strong>Próximos proyectos con el personaje</strong></caption>
 
           <thead>
