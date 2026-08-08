@@ -18,21 +18,26 @@
 
     <link rel="icon" href="recursos/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- CABECERA -->
     <header id="inicio">
       <h1>El ascenso del murciélago 🦇</h1>
-      <p>Un breve vistazo a la historia de Batman.</p>
+      <p class="subtitulo">Un breve vistazo a la historia de Batman.</p>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="listas.html">Datos sobre Batman</a></li>
-          <li><a href="galeria.html">Galería multimedia</a></li>
-          <li><a href="contacto.html">Area de sugerencias</a></li>
-        </ul>
+      <nav class="navbar"> 
+        <a href="index.html">Inicio</a>
+        <p>|</p>
+        <a href="listas.html">Datos sobre Batman</a>
+        <p>|</p>
+        <a href="galeria.html">Galería multimedia</a>
+        <p>|</p>
+        <a href="contacto.html">Area de sugerencias</a>
       </nav>
     </header>
 
@@ -116,11 +121,11 @@
         </section>
     </article>
 
-      <p><a href="#inicio">Volver al inicio de la página</a></p>
+      <p class="volver"><a href="#inicio">Volver al inicio de la página</a></p>
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
+    <footer id="footer">
       <h2>Contacto</h2>
       <address>
         Diseñador del sitio: Elías Guzman Castro<br />
@@ -131,6 +136,9 @@
           >Casoop</a
         >
       </address>
+
+      <p>|</p>
+
       <p>
         Recursos externos:<br />
         <a
@@ -146,6 +154,9 @@
           >Artículo de Batman en el sitio oficial de DC</a
         ><br />
       </p>
+
+      <p>|</p>
+
       <p>
         <small
           >&copy; 2026 &middot; Casoop &middot; Todos los derechos
