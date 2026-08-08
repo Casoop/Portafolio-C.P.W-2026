@@ -112,4 +112,14 @@ footer a:hover {
 tbody tr:nth-child(odd){
     background-color: #1C2D42;
 }
-/*Nota Elías: lo cambie por odd para que la tabla de viese mejor*/
+/*Nota de Elías: lo cambie por odd para que la tabla de viese mejor*/
+
+/*Pseudo elemento ::first-letter y ::selection*/
+article p::first-letter {
+    font-size: 26px;
+}
+
+::selection {
+    background-color: #3B629B;
+    color: white;
+}
