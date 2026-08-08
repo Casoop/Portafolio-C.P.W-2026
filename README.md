@@ -120,18 +120,18 @@ _Portada del sitio personal al cerrar la Unidad 2._
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
 
-| Sesión | Tema                       | Qué aprendí                               |                     Trabajo                     |              Captura              |
-| :----: | :------------------------- | :---------------------------------------- | :---------------------------------------------: | :-------------------------------: |
-|  S11   | Introducción a CSS         | Introducción a CSS, Sintaxis y validación | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/S11-intro_css.png) |
-|  S12   | Selectores y pseudo-clases |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S13   | Tipografía y color         |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S14   | Modelo de cajas            |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S15   | Display y posicionamiento  |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S16   | Flexbox                    |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S17   | CSS Grid                   |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S18   | Componentes estilizados    |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S19   | Animaciones y filtros      |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
-|  S20   | SCSS y repaso              |                                           |              [ver](unidad-03-css/)              |         [ver](recursos/)          |
+| Sesión | Tema                       | Qué aprendí                                                          |                       Trabajo                       |              Captura              |
+| :----: | :------------------------- | :------------------------------------------------------------------- | :-------------------------------------------------: | :-------------------------------: |
+|  S11   | Introducción a CSS         | Introducción a CSS, Sintaxis y validación                            |   [ver](unidad-03-css/sitio-demo/css/estilos.css)   | [ver](recursos/S11-intro_css.png) |
+|  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias | [ver](unidad-03-css/sitio-personal/css/estilos.css) |         [ver](recursos/S12.png)          |
+|  S13   | Tipografía y color         |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S14   | Modelo de cajas            |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S15   | Display y posicionamiento  |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S16   | Flexbox                    |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S17   | CSS Grid                   |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S18   | Componentes estilizados    |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S19   | Animaciones y filtros      |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
+|  S20   | SCSS y repaso              |                                                                      |                [ver](unidad-03-css/)                |         [ver](recursos/)          |
 
 </details>
 
