@@ -1,5 +1,6 @@
 /*css/estilos.css*/
 
+
 /*reset básico*/
 *{
     margin: 0;
@@ -32,15 +33,11 @@ h3 {
     font-family: 'roboto';
 }
 
+
 /*Aplicar estilos a clases*/
 .subtitulo {
     text-align: center;
     font-size: 18px;
-}
-
-.menu-anclas a {
-    color: #3B629B;
-;
 }
 
 .navbar {
@@ -53,9 +50,6 @@ h3 {
     padding: 20px 0px 20px 0px;
 }
 
-.volver a {
-    color: #FCD116;
-}
 
 /*Aplicar estilos a IDs*/
 #inicio {
@@ -73,14 +67,43 @@ h3 {
     padding: 30px;
 }
 
-/*estilos a enlaces dentro del nav*/
+
+/*estilos a enlaces*/
 nav a {
-    color: #FCD116;
-    display: flex;
+    color: #3B629B;
+    transition: 0.3s;
 }
-
-
 
 footer a {
     color: #3B629B;
+    transition: 0.3s;
+}
+
+.menu-anclas a {
+    color: #3B629B;
+    transition: 0.3s;
+;
+}
+
+.volver a {
+    color: #3B629B;
+    transition: 0.3s;
+}
+
+
+/*Pseudo-clase: Hover*/
+nav a:hover {
+    color: #FCD116;
+}
+
+footer a:hover {
+    color: #FCD116;
+}
+
+.volver a:hover {
+    color: #FCD116;
+}
+
+.menu-anclas a:hover {
+    color: #FCD116;
 }
