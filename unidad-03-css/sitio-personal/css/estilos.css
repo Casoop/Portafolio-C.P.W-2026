@@ -9,25 +9,27 @@
 
 body {
     font-family: 'Lora';
-    color: #f5f5f5;
-    background-color: #121212;
+    color: #8A95A5;
+    background-color: #0B0E14;
 }
 
 h1 {
-    color: #FFCC00;
+    color: white;
     font-size: 48px;
     font-family: 'roboto';
     text-align: center;
 }
 
 h2 {
-    color: #FFCC00;
+    color: white;
     font-size: 30px;
+    font-family: 'roboto';
 }
 
 h3 {
-    color: #FFCC00;
+    color: white;
     font-size: 26px;
+    font-family: 'roboto';
 }
 
 /*Aplicar estilos a clases*/
@@ -36,6 +38,49 @@ h3 {
     font-size: 18px;
 }
 
-.menu-anclas {
-    color: #4A5568;
+.menu-anclas a {
+    color: #3B629B;
+;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px 20px 30px;
+}
+
+.volver {
+    padding: 20px 0px 20px 0px;
+}
+
+.volver a {
+    color: #FCD116;
+}
+
+/*Aplicar estilos a IDs*/
+#inicio {
+    background-color: #1C2D42;
+}
+
+#contenido {
+    padding: 30px;
+}
+
+#footer {
+    background-color: #1C2D42;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+/*estilos a enlaces dentro del nav*/
+nav a {
+    color: #FCD116;
+    display: flex;
+}
+
+
+
+footer a {
+    color: #3B629B;
 }
