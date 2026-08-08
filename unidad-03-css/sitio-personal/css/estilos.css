@@ -107,3 +107,9 @@ footer a:hover {
 .menu-anclas a:hover {
     color: #FCD116;
 }
+
+/*Pseudo-clase :nth-child: filas cebra en la tabla*/
+tbody tr:nth-child(odd){
+    background-color: #1C2D42;
+}
+/*Nota Elías: lo cambie por odd para que la tabla de viese mejor*/
