@@ -63,7 +63,7 @@ footer {
 }
 
 h2, h3 {
-    color: #eb2f0e;
+    color: #1f4e79;
 }
 
 main p {
@@ -96,7 +96,10 @@ header nav a {
 
 /*Aplicar estilos a identificadores o IDs*/
 #inicio {
-    background-color: #1f4e79;
+    background-image: url(../Recursos/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px ;
 }
 
