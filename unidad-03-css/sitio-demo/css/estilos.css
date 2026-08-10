@@ -1,16 +1,17 @@
 /*css/estilos.css*/
 
 /*Reset básico*/
-/*100% del tamaño de fuente indica al usuario configuró
-Por omisión son 16 px, */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }/*esta regla elimina los márgenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
+
 html {
     font-size: 100%
-}
+}/*100% del tamaño de fuente indica al usuario configuró
+Por omisión son 16 px, */
 
 body {
     font-family: arial, sans-serif;
@@ -86,6 +87,10 @@ header nav a {
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+}
+
+header ul li {
+    list-style-type: none;
 }
 
 /*Aplicar estilos a clases*/
