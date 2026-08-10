@@ -23,6 +23,8 @@ body {
 h1, h2, h3 {
     color: white;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -43,9 +45,29 @@ h3 {
 
 p {
     font-size: 1rem;
-    font-weight: 400; /*Este es el grososor default (No es estrictamente necesario ponerlo)*/
+    font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)*/
 }
 
+main p {
+    max-width: 70ch;
+}
+
+blockquote {
+    font-style: italic;
+    color: white;
+}
+
+/*Transformación y espacio*/
+header nav a {
+    text-transform: uppercase;
+    font-style: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+header ul li {
+    list-style-type: none;
+}
 
 /*Aplicar estilos a clases*/
 .subtitulo {
@@ -60,7 +82,14 @@ p {
 
 /*Aplicar estilos a IDs*/
 #inicio {
-    background-color: #1C2D42;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+
+    background-image: url(../Recursos/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #contenido {
@@ -74,37 +103,13 @@ p {
 
 
 /*estilos a enlaces*/
-nav, footer a {
+nav a, footer a, .menu-anclas a, .volver a {
     color: #3B629B;
     transition: 0.3s;
 }
-
-.menu-anclas a {
-    color: #3B629B;
-    transition: 0.3s;
-;
-}
-
-.volver a {
-    color: #3B629B;
-    transition: 0.3s;
-}
-
 
 /*Pseudo-clase: Hover*/
-nav a:hover {
-    color: #FCD116;
-}
-
-footer a:hover {
-    color: #FCD116;
-}
-
-.volver a:hover {
-    color: #FCD116;
-}
-
-.menu-anclas a:hover {
+nav a:hover, footer a:hover, .volver a:hover, .menu-anclas a:hover  {
     color: #FCD116;
 }
 
