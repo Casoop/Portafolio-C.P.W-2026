@@ -24,6 +24,7 @@ body {
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 25px;
     /*0 aplica a la parte vertical y horizontal*/
     /*el auto: reparte el espacio sobrante por igual a ambos lados
     lo centra en un elementos con un ancho limitado*/
@@ -89,6 +90,7 @@ main a {
 blockquote p {
     font-style: italic;
     color: #555;
+    border-left: 4px solid #1f4e79;
 }
 
 /*Transformación y espacio*/
@@ -105,12 +107,11 @@ header nav ul {
 }/*quita las viñetas y el subrayado*/
 
 nav li {
-    margin-right: 15px;
-}
-
-header nav li {
     display: inline-block;
+    margin-right: 15px;
 }/*Coloca las opciones de menú en línea, uno al lado de otro*/
+    /*visibility: hidden; oculta la linea de menu, pero sigue existiendo
+    display: none; oculta la linea de menu y libera el espacio*/
 
 /*Aplicar estilos a clases*/
 .destacado {
@@ -189,7 +190,7 @@ th td {
 thead th {
     background-color: #1f4e79;
     color: white;
-}/*trabaja encabezados de la tabla*/
+}/*trabaja encabezados de la tabla  (Las cuatro celdas de encabezado: semana, dia, modalidadm contenido)*/
 
 tfoot td {
     padding: 12px;
@@ -243,14 +244,17 @@ caption {
     margin-bottom: 24px;
 }
 
+
+/*Las figuras de la galeria.html*/
+figure {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
+}
+
 /*los 5 valores de position:
 static: valor por omision/defecto.
 relative: se desplaza desde su propia posición, conserva su posición y los elementos vecinos no se mueven.
 absolute: se ubica respecto al ancestro más cercano.
 fixed: se ubica respecto a la ventana. No se mueve al desplazarse.
 sticky: Fluye normal hasta llegar a un umbral, y entonces se pega*/
-
-/*Patron para este caso*/
-.figura-destacada {
-
-}
