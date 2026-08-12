@@ -132,3 +132,10 @@ article p::first-letter {
     background-color: #3B629B;
     color: white;
 }
+
+/*border a los elementos de la galeria.html*/
+figure, .img_simple {
+    border: 1px solid #1C2D42;
+    border-radius: 6px;
+    padding: 12px;
+}
