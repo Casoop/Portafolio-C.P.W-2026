@@ -20,13 +20,6 @@ body {
     background-color: #0B0E14;
 }
 
-h1, h2, h3 {
-    color: white;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -43,9 +36,25 @@ h3 {
     font-weight: 600;
 }
 
+h1, h2, h3 {
+    color: white;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)*/
+}
+
+/*header {
+    /*No es necesario ya que #Inicio sobre escribiria lo puesto aca: background-color, color, padding, border-radius
+}*/
+
+footer {
+    background-color: #1C2D42;
+    padding: 30px;
 }
 
 main p {
@@ -63,6 +72,7 @@ header nav a {
     font-style: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
 header ul li {
@@ -95,12 +105,6 @@ header ul li {
 #contenido {
     padding: 30px;
 }
-
-#footer {
-    background-color: #1C2D42;
-    padding: 30px;
-}
-
 
 /*estilos a enlaces*/
 nav a, footer a, .menu-anclas a, .volver a {
