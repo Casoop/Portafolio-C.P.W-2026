@@ -73,16 +73,16 @@ blockquote {
 }
 
 /*Transformación y espacio*/
+header nav ul {
+    list-style-type: none;
+}/*quita las viñetas y el subrayado*/
+
 header nav a {
     text-transform: uppercase;
     font-style: 1px;
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
-}
-
-header ul li {
-    list-style-type: none;
 }
 
 /*Aplicar estilos a clases*/
