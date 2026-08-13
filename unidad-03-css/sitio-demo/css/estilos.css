@@ -94,9 +94,16 @@ blockquote p {
 /*Transformación y espacio*/
 header nav ul {
     display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto, de forma automatica*/
-    /*flex-direction: row-reverse;*/
-    list-style-type: none;
-}/*quita las viñetas y el subrayado*/
+    /*flex-direction: row-reverse; /*cambia la orientación*/
+    list-style-type: none; /*quita las viñetas y el subrayado*/
+    gap: 15px; /*Separación uniforme entre elementos*/
+    /* justify-content: flex-start; /*coloca elementos al inicion de la fila
+    justify-content: end;           /*coloca elementos al final de la fila
+    justify-content: center;        /*coloca elementos en el centro de la fila
+    justify-content: space-between; /*coloca elementos extremos pegados
+    justify-content: space-around;  /*espacio al rededor de cada uno*/
+    justify-content: space-evenly;  /*coloca todos los espacios iguales*/
+}
 
 /*header nav li {
     display: inline-block;
@@ -121,6 +128,9 @@ header nav a {
 
 /*Aplicar estilos a identificadores o IDs*/
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed; /*fija con respecto a la ventana. cabecera queda fija arriba*/
     top: 0;
     left: 0;
@@ -129,7 +139,7 @@ header nav a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px ;
+    padding: 12px 20px;
     z-index: 100; /*cuanto mayor es el numero, más al frente va a estar*/
 }
 
