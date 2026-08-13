@@ -50,45 +50,52 @@
         <article>
           <h2>Galería</h2>
 
-          <!--Imagen y sus atributos-->
-          <img
-            src="recursos/S.7_Lab01.jpg"
-            alt="Imagen de la galería de un laboratorio de informática"
-            width="600"
-            height="400"
-          />
-
-          <!--FIGURE: Agrupa un contenido con una explicación-->
-          <figure>
-            <img
-              src="recursos/S.7_Lab02.jpg"
-              alt="Imagen de la galería de un laboratorio de informática"
-              width="800"
-              height="500"
-            />
-            <figcaption>
-              Imagen de la galería de un laboratorio de informática
-            </figcaption>
-          </figure>
-
-          <!--VARIOS FORMATOS: el navegador elige el uno-->
-
-          <figure class="figura-destacada">
-            <picture>
-              <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
-              <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+          <div class="tarjeta">
+            <!--Imagen y sus atributos-->
+            <figure>
               <img
                 src="recursos/S.7_Lab01.jpg"
                 alt="Imagen de la galería de un laboratorio de informática"
-                width="800"
-                height="500"
+                width="400"
+                height="300"
               />
-            </picture>
-            <span class="etiqueta">Destacada</span>
-            <figcaption>
-              Imagen de la Galería de un laboratorio de informática
-            </figcaption>
-          </figure>
+              <figcaption>
+                Imagen de la galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+
+            <!--FIGURE: Agrupa un contenido con una explicación-->
+            <figure>
+              <img
+                src="recursos/S.7_Lab02.jpg"
+                alt="Imagen de la galería de un laboratorio de informática"
+                width="400"
+                height="300"
+              />
+              <figcaption>
+                Imagen de la galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+
+            <!--VARIOS FORMATOS: el navegador elige el uno-->
+
+            <figure class="figura-destacada">
+              <picture>
+                <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+                <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+                <img
+                  src="recursos/S.7_Lab01.jpg"
+                  alt="Imagen de la galería de un laboratorio de informática"
+                  width="400"
+                  height="300"
+                />
+              </picture>
+              <span class="etiqueta">Destacada</span>
+              <figcaption>
+                Imagen de la Galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+          </div>
 
           <!--AUDIO-->
           <section id="audio">
