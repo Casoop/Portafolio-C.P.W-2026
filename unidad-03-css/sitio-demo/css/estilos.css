@@ -18,7 +18,7 @@ body {
     line-height: 1.6; /*tamaño de reglon*/
     color: #333;
     background-color: #fcfcfc;
-    padding-top: 180px;
+    padding-top: 100px;
 }/*Esta regla define la fuente y el color del texto en el cuerpo del documento*/
 
 .contenedor {
@@ -65,6 +65,11 @@ header {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
     background-color: #dce6f1;
     padding: 20px;
     margin-top: 32px;
@@ -93,10 +98,19 @@ blockquote p {
 
 /*Transformación y espacio*/
 header nav ul {
-    list-style-type: none;
-}/*quita las viñetas y el subrayado*/
+    display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto, de forma automatica*/
+    /*flex-direction: row-reverse; /*cambia la orientación*/
+    list-style-type: none; /*quita las viñetas y el subrayado*/
+    gap: 15px; /*Separación uniforme entre elementos*/
+    /* justify-content: flex-start; /*coloca elementos al inicion de la fila
+    justify-content: end;           /*coloca elementos al final de la fila
+    justify-content: center;        /*coloca elementos en el centro de la fila
+    justify-content: space-between; /*coloca elementos extremos pegados
+    justify-content: space-around;  /*espacio al rededor de cada uno*/
+    justify-content: space-evenly;  /*coloca todos los espacios iguales*/
+}
 
-nav li {
+/*header nav li {
     display: inline-block;
     margin-right: 15px;
 }/*Coloca las opciones de menú en línea, uno al lado de otro*/
@@ -111,6 +125,10 @@ header nav a {
     padding: 10px 15px;
 }
 
+header nav {
+    align-self: center; /*anula aling items para elemento especifico*/
+}
+
 /*Aplicar estilos a clases*/
 .destacado {
     background-color: #fff3cd;
@@ -119,6 +137,12 @@ header nav a {
 
 /*Aplicar estilos a identificadores o IDs*/
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; /*acomododa arriba
+    align-items: center; /*al centro
+    align-items: flex-end; /*abajo */
+    align-items: baseline; /*alinea por la linea base del texto*/
     position: fixed; /*fija con respecto a la ventana. cabecera queda fija arriba*/
     top: 0;
     left: 0;
@@ -127,7 +151,7 @@ header nav a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px ;
+    padding: 12px 20px;
     z-index: 100; /*cuanto mayor es el numero, más al frente va a estar*/
 }
 
@@ -288,3 +312,28 @@ escala de valores de z-index
 100 cabecera fija
 1000 ventanas emergentes y capas superpuestas
 9999 no hace falta usarlo casi nunca porque no deja maregen a otro valor por encima*/
+
+.centrado {
+    display: flex;
+    justify-content: center; /*centrado horizontal*/
+    align-items: center;     /*centrado vertical*/
+}
+
+.fila-tarjetas {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    /*padding: 20px;
+    
+    flex-grow: 1; /*cuando crece si sobra espacio. 0 no crece
+    flex-shrink: 1; /*cuando encoge si sobra espacio. 0 no se encoge
+    flex-basis: 0;*/
+    flex-wrap: wrap-reverse; /*wrap salta hacia abajo. wrap-reverse salta arriba y nowrap sin salto*/
+}
+
+.tarjeta {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: nowrap;
+}

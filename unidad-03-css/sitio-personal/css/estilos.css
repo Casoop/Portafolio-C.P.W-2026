@@ -78,7 +78,7 @@ header nav ul {
     list-style-type: none;
 }/*quita las viñetas y el subrayado*/
 
-nav li {
+header nav li {
     display: inline-block;
     margin-right: 20px;
 }/*Coloca las opciones de menú en línea, uno al lado de otro*/
