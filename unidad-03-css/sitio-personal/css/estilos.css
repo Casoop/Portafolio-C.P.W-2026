@@ -63,7 +63,7 @@ footer {
     padding: 30px;
 }
 
-main p {
+main p, main blockquote {
     max-width: 70ch;
 }
 
@@ -155,3 +155,14 @@ figure, .img_simple {
 .cita_destacada {
     position: relative;
 }
+
+.etiqueta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:#1C2D42;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    z-index: 10;
+} 
