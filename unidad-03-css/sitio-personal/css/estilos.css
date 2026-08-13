@@ -151,3 +151,7 @@ figure, .img_simple {
     border-radius: 6px;
     padding: 12px;
 }
+
+.cita_destacada {
+    position: relative;
+}
