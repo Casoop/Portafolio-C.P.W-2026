@@ -93,10 +93,12 @@ blockquote p {
 
 /*Transformación y espacio*/
 header nav ul {
+    display: flex; /*Activa flexbox y coloca en fila horizontal los elementos por defecto, de forma automatica*/
+    /*flex-direction: row-reverse;*/
     list-style-type: none;
 }/*quita las viñetas y el subrayado*/
 
-nav li {
+/*header nav li {
     display: inline-block;
     margin-right: 15px;
 }/*Coloca las opciones de menú en línea, uno al lado de otro*/
