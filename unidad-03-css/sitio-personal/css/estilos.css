@@ -9,7 +9,7 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 100%; /*Al no declarse otro valor se toma el por defecto 16px, el 100% indica que la fuente no presenta reducción*/
 }
 
 body {
@@ -20,11 +20,10 @@ body {
     background-color: #0B0E14;
 }
 
-h1, h2, h3 {
-    color: white;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+main { /*En el css de sitio demo esto aparece como ".contenedor"*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 h1 {
@@ -43,9 +42,25 @@ h3 {
     font-weight: 600;
 }
 
+h1, h2, h3 {
+    color: white;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)*/
+}
+
+/*header {
+    /*No es necesario ya que #Inicio sobre escribiria lo puesto aca: background-color, color, padding, border-radius
+}*/
+
+footer {
+    background-color: #1C2D42;
+    padding: 30px;
 }
 
 main p {
@@ -58,15 +73,16 @@ blockquote {
 }
 
 /*Transformación y espacio*/
+header nav ul {
+    list-style-type: none;
+}/*quita las viñetas y el subrayado*/
+
 header nav a {
     text-transform: uppercase;
     font-style: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-}
-
-header ul li {
-    list-style-type: none;
+    padding: 10px 15px;
 }
 
 /*Aplicar estilos a clases*/
@@ -92,14 +108,9 @@ header ul li {
     background-repeat: no-repeat;
 }
 
-#contenido {
+/*#contenido {
     padding: 30px;
-}
-
-#footer {
-    background-color: #1C2D42;
-    padding: 30px;
-}
+}*/
 
 
 /*estilos a enlaces*/
@@ -127,4 +138,11 @@ article p::first-letter {
 ::selection {
     background-color: #3B629B;
     color: white;
+}
+
+/*border a los elementos de la galeria.html*/
+figure, .img_simple {
+    border: 1px solid #1C2D42;
+    border-radius: 6px;
+    padding: 12px;
 }
