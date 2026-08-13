@@ -9,7 +9,7 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 100%; /*Al no declarse otro valor se toma el por defecto 16px, el 100% indica que la fuente no presenta reducción*/
 }
 
 body {
@@ -18,6 +18,12 @@ body {
     line-height: 1.6; /*Tamaño de reglon*/
     color: #8A95A5;
     background-color: #0B0E14;
+}
+
+main { /*En el css de sitio demo esto aparece como ".contenedor"*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 h1 {
@@ -102,9 +108,10 @@ header ul li {
     background-repeat: no-repeat;
 }
 
-#contenido {
+/*#contenido {
     padding: 30px;
-}
+}*/
+
 
 /*estilos a enlaces*/
 nav a, footer a, .menu-anclas a, .volver a {
