@@ -128,7 +128,7 @@ _Portada del sitio personal al cerrar la Unidad 2._
 |  S14   | Modelo de cajas            | Estilizar enlaces, listas y cajas                                           |   [ver](unidad-03-css/sitio-demo/css/estilos.css)   |         [ver](recursos/S14.png)         |
 |  S15   | Display y posicionamiento  | Display y posicionamiento, barra de navegacion fija                         |   [ver](unidad-03-css/sitio-demo/css/estilos.css)   | [ver](recursos/S15-posicionamiento.png) |
 |  S16   | Flexbox                    | trabajamos con propiedades de flexbox para posicionar cajas y sus elementos |    [ver](unidad-03-css/sitio-demo/galeria.html)     |     [ver](recursos/S16-flexbox.png)     |
-|  S17   | CSS Grid                   |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
+|  S17   | CSS Grid                   | trabajamos con grid template                                                |    [ver](unidad-03-css/sitio-demo/galeria.html)     |      [ver](recursos/S17-grid.png)       |
 |  S18   | Componentes estilizados    |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
 |  S19   | Animaciones y filtros      |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
 |  S20   | SCSS y repaso              |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
