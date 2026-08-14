@@ -346,3 +346,21 @@ escala de valores de z-index
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px 50px;
 }
+
+#contenido {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+
+    grid-template-areas: 'indice principal' 'indice lateral';
+    /*CSS dibuja la estructura, cada cadena de texto es una fila.
+    Cada palabra dentro es una celda
+    repetir nombre hace que una zona abarque varias celdas.
+    aquí el indice ocupa 2 filas de la primera columna*/
+    /*asignar cada elemento a su área*/
+    #contenido > nav {grid-area: indice;}
+    #contenido > article {grid-area: indice;}
+    #contenido > aside {grid-area: area lateral;}
+    grid-template-areas: 'indice principal';
+                        
+}
