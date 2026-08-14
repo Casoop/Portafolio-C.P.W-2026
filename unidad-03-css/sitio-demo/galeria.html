@@ -29,10 +29,10 @@
       <!-- CABECERA (Sesión 6) -->
       <header id="inicio">
         <h1>Galería de imagenes</h1>
-        <p>
+        <!--<p>
           Sitio de demostración del módulo
           <abbr title="Código del módulo">CSTI12002</abbr>.
-        </p>
+        </p>-->
 
         <nav>
           <ul>
@@ -54,6 +54,52 @@
             <!--Imagen y sus atributos-->
             <figure>
               <img
+                src="recursos/S.7_Lab01.jpg"
+                alt="Imagen de la galería de un laboratorio de informática"
+                width="400"
+                height="300"
+              />
+              <figcaption>
+                Imagen de la galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+
+            <!--FIGURE: Agrupa un contenido con una explicación-->
+            <figure>
+              <img
+                src="recursos/S.7_Lab02.jpg"
+                alt="Imagen de la galería de un laboratorio de informática"
+                width="400"
+                height="300"
+              />
+              <figcaption>
+                Imagen de la galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+
+            <!--VARIOS FORMATOS: el navegador elige el uno-->
+
+            <figure class="figura-destacada">
+              <picture>
+                <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+                <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+                <img
+                  src="recursos/S.7_Lab01.jpg"
+                  alt="Imagen de la galería de un laboratorio de informática"
+                  width="400"
+                  height="300"
+                />
+              </picture>
+              <span class="etiqueta">Destacada</span>
+              <figcaption>
+                Imagen de la Galería de un laboratorio de informática
+              </figcaption>
+            </figure>
+
+
+ 
+            <!--copia de imagenes de galeria-->
+            <img
                 src="recursos/S.7_Lab01.jpg"
                 alt="Imagen de la galería de un laboratorio de informática"
                 width="400"
