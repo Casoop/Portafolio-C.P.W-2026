@@ -331,9 +331,17 @@ escala de valores de z-index
     flex-wrap: wrap-reverse; /*wrap salta hacia abajo. wrap-reverse salta arriba y nowrap sin salto*/
 }
 
-.tarjeta {
+/*.tarjeta {
     display: flex;
     flex: 1;
     gap: 20px;
     flex-wrap: nowrap;
+}*/
+
+.galeria-grid {
+    display: grid; /*Activa grid al igual que flexbox, se declara en el contenedor*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
 }
