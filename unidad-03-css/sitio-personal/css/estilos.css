@@ -74,7 +74,7 @@ blockquote {
 }
 
 /*Transformación y espacio*/
-header nav ul {
+header nav ul, main div ul {
     display: flex; /*Activa flexbox para la lista desordenada*/
     gap: 15px;
     list-style-type: none;
@@ -112,8 +112,10 @@ header nav {
 /*Aplicar estilos a IDs*/
 #inicio {
     display: flex;
+
+    justify-content: center;
     justify-content:space-between;
-    align-content: baseline;
+    align-items: baseline;
 
     position: fixed;
     top: 0;
@@ -190,3 +192,10 @@ figure, .img_simple {
     font-size: 0.875rem;
     z-index: 10;
 } 
+
+.menu-anclas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+}
