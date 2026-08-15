@@ -78,6 +78,7 @@ header nav ul {
     display: flex; /*Activa flexbox para la lista desordenada*/
     gap: 15px;
     list-style-type: none;
+    justify-content: space-evenly;
 }/*quita las viñetas y el subrayado*/
 
 /*header nav li {
@@ -111,7 +112,7 @@ header nav {
 /*Aplicar estilos a IDs*/
 #inicio {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-content: baseline;
 
     position: fixed;
