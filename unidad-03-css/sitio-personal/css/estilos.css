@@ -203,4 +203,6 @@ figure {
 .galeria-img {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    flex-basis: 0px;
 }
