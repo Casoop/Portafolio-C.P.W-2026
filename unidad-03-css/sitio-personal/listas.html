@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Elías GC" />
-    <meta
-      name="description"
-      content="Listas con datos del personaje Batman."
-    />
+    <meta name="description" content="Listas con datos del personaje Batman." />
     <meta
       name="keywords"
       content="listas, datos, HTML, CSS, sitio_personal, batman"
@@ -17,11 +14,14 @@
     <title>Listas | El ascenso del murciélago</title>
 
     <link rel="icon" href="recursos/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -30,7 +30,7 @@
       <h1>El ascenso del murciélago 🦇</h1>
       <!--<p class="subtitulo">Un breve vistazo a la historia de Batman.</p>-->
 
-      <nav> 
+      <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="listas.html">Datos sobre Batman</a></li>
@@ -42,7 +42,6 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main id="contenido">
-
       <!-- Índice con anclas internas -->
       <div class="menu-anclas">
         <h2>En esta página</h2>
@@ -50,7 +49,11 @@
           <li><a href="#villanos">Villanos principales</a></li>
           <li><a href="#gadgets">Gadgets de Batman</a></li>
           <li><a href="#portadores">Otros portadores del manto</a></li>
-          <li><a href="#adaptaciones">Adaptaciones de Batman en diversos medios</a></li>
+          <li>
+            <a href="#adaptaciones"
+              >Adaptaciones de Batman en diversos medios</a
+            >
+          </li>
           <li><a href="#proyectos">Próximos proyectos con el personaje</a></li>
         </ul>
       </div>
@@ -80,44 +83,85 @@
 
         <!-- Lista desordenada -->
         <section id="gadgets">
-           <h3>Gadgets de Batman:</h3>
-           <ul>
+          <h3>Gadgets de Batman:</h3>
+          <ul>
             <li>Cinturón de herramientas (Baticinturón)</li>
             <li>Batimóvil</li>
             <li>Batarang</li>
             <li>Capa-planeador</li>
             <li>Bat-Gancho</li>
             <li>Batiseñal</li>
-           </ul> 
+          </ul>
         </section>
       </article>
 
       <!-- Lista descriptiva -->
-        <section id="portadores">
-            <h3>Otros portadores del manto:</h3>
-            <dl>
-                <dt><strong>Dick Grayson</strong></dt>
-                <dd>El primer Robin, quien asumió el manto temporalmente tras la muerte de Bruce Wayne en "Final Crisis".</dd>
-        
-                <dt><strong>Jean-Paul Valley (Azrael)</strong></dt>
-                <dd>Asumió el rol durante la saga "Knightfall", donde Bane le rompió la columna a Bruce Wayne, dejandolo paralítico.</dd>
-
-                <dt><strong>Terry McGinnis</strong></dt>
-                <dd>El protagonista de la serie animada "Batman Beyond", quien se convierte en el nuevo Batman en un futuro distópico bajo la tutela de un envejecido Bruce Wayne.</dd>
-        
-                <dt><strong>Thomas Wayne</strong></dt>
-                <dd>En la línea temporal de "Flashpoint" el atraco en el que mueren los padres de Bruce cambia, y es Thomas quien sobrevive y se convierte en Batman, mientras que Bruce muere siendo un niño. Lo que lo convierte en un Batman más violento y despiadado que el original.</dd>
-
-                <dt><strong>James Gordon</strong></dt>
-                <dd>Durante el arco "Superheavy", Tras la supuesta muerte de Bruce Wayne, James Gordon asume el manto de Batman con la ayuda de un exoesqueleto y tecnología avanzada.</dd>
-            </dl>
-        </section>
+      <section id="portadores">
+        <h3>Otros portadores del manto:</h3>
+        <dl class="otros">
+          <figure>
+            <dt><strong>Dick Grayson</strong></dt>
+            <img class="dl-img" src="Recursos/B-Dick.webp" alt="Batman: Dick Grayson">
+          </figure>
+          <figure>
+            <dd>
+              El primer Robin, quien asumió el manto temporalmente tras la
+              muerte de Bruce Wayne en "Final Crisis".
+            </dd>
+          </figure>
+          <figure>
+          <dt><strong>Jean-Paul Valley (Azrael)</strong></dt>
+          <img class="dl-img" src="Recursos/B-Azrael.webp" alt="Batman: Jean-Paul Valley">
+          </figure>
+          <figure>
+          <dd>
+            Asumió el rol durante la saga "Knightfall", donde Bane le rompió la
+            columna a Bruce Wayne, dejandolo paralítico.
+          </dd>
+          </figure>
+          <figure>
+          <dt><strong>Terry McGinnis</strong></dt>
+          <img class="dl-img" src="Recursos/B-Terry.webp" alt="Batman: Terry McGinnis">
+          </figure>
+          <figure>
+          <dd>
+            El protagonista de la serie animada "Batman Beyond", quien se
+            convierte en el nuevo Batman en un futuro distópico bajo la tutela
+            de un envejecido Bruce Wayne.
+          </dd>
+          </figure>
+          <figure>
+          <dt><strong>Thomas Wayne</strong></dt>
+          <img class="dl-img" src="Recursos/B-Thomas.jpg" alt="Batman: Thomas Wayne">
+          </figure>
+          <figure>
+          <dd>
+            En la línea temporal de "Flashpoint" el atraco en el que mueren los
+            padres de Bruce cambia, y es Thomas quien sobrevive y se convierte
+            en Batman, mientras que Bruce muere siendo un niño. Lo que lo
+            convierte en un Batman más violento y despiadado que el original.
+          </dd>
+          </figure>
+          <figure>
+          <dt><strong>James Gordon</strong></dt>
+          <img class="dl-img" src="Recursos/B-Gordon.jpg" alt="Batman: James Gordon">
+          </figure>
+          <figure>
+          <dd>
+            Durante el arco "Superheavy", Tras la supuesta muerte de Bruce
+            Wayne, James Gordon asume el manto de Batman con la ayuda de un
+            exoesqueleto y tecnología avanzada.
+          </dd>
+          </figure>
+        </dl>
+      </section>
 
       <!-- Lista anidada -->
-       <section id="adaptaciones">
+      <section id="adaptaciones">
         <h3>Adaptaciones de Batman en otros medios:</h3>
-         <ul>
-          <li><strong>Películas:</strong> 
+        <ul class="medios">
+          <li>
+            <strong>Películas:</strong>
             <ul>
               <li>Batman (1989) - Dirigida por Tim Burton</li>
               <li>Batman Returns (1992) - Dirigida por Tim Burton</li>
@@ -125,13 +169,19 @@
               <li>Batman & Robin (1997) - Dirigida por Joel Schumacher</li>
               <li>Batman Begins (2005) - Dirigida por Christopher Nolan</li>
               <li>The Dark Knight (2008) - Dirigida por Christopher Nolan</li>
-              <li>The Dark Knight Rises (2012) - Dirigida por Christopher Nolan</li>
-              <li>Batman v Superman: Dawn of Justice (2016) - Dirigida por Zack Snyder</li>
+              <li>
+                The Dark Knight Rises (2012) - Dirigida por Christopher Nolan
+              </li>
+              <li>
+                Batman v Superman: Dawn of Justice (2016) - Dirigida por Zack
+                Snyder
+              </li>
               <li>The Batman (2022) - Dirigida por Matt Reeves</li>
             </ul>
           </li>
-  
-          <li><strong>Series animadas:</strong>
+
+          <li>
+            <strong>Series animadas:</strong>
             <ul>
               <li>Batman: The Animated Series (1992-1995)</li>
               <li>The New Batman Adventures (1997-1999)</li>
@@ -142,7 +192,8 @@
             </ul>
           </li>
 
-          <li><strong>Series live-action:</strong>
+          <li>
+            <strong>Series live-action:</strong>
             <ul>
               <li>Batman (1966-1968)</li>
               <li>Gotham (2014-2019)</li>
@@ -151,21 +202,22 @@
             </ul>
           </li>
 
-         <li><strong>Videojuegos:</strong>
-          <ul>
-            <li>Lego Batman: The Video Game (2008)</li>
-            <li>Batman: Arkham Asylum (2009)</li>
-            <li>Batman: Arkham City (2011)</li>
-            <li>Lego Batman 2: DC Super Heroes (2012)</li>
-            <li>Batman: Arkham Origins (2013)</li>
-            <li>Lego Batman 3: Beyond Gotham (2014)</li>
-            <li>Batman: Arkham Knight (2015)</li>
-            <li>Batman: The Telltale Series (2016)</li>
-            <li>Batman: Arkham VR (2016)</li>
-            <li>Gotham Knights (2022)</li>
-            <li>Batman: Arkham Shadow (2024)</li>
-            <li>Lego Batman: Legacy of the Dark Knight (2026)</li>
-          </ul>
+          <li>
+            <strong>Videojuegos:</strong>
+            <ul>
+              <li>Lego Batman: The Video Game (2008)</li>
+              <li>Batman: Arkham Asylum (2009)</li>
+              <li>Batman: Arkham City (2011)</li>
+              <li>Lego Batman 2: DC Super Heroes (2012)</li>
+              <li>Batman: Arkham Origins (2013)</li>
+              <li>Lego Batman 3: Beyond Gotham (2014)</li>
+              <li>Batman: Arkham Knight (2015)</li>
+              <li>Batman: The Telltale Series (2016)</li>
+              <li>Batman: Arkham VR (2016)</li>
+              <li>Gotham Knights (2022)</li>
+              <li>Batman: Arkham Shadow (2024)</li>
+              <li>Lego Batman: Legacy of the Dark Knight (2026)</li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -173,7 +225,9 @@
       <!-- Tabla de datos -->
       <section id="proyectos">
         <table border="3">
-          <caption><strong>Próximos proyectos con el personaje</strong></caption>
+          <caption>
+            <strong>Próximos proyectos con el personaje</strong>
+          </caption>
 
           <thead>
             <tr>
@@ -189,7 +243,10 @@
               <td rowspan="3">2026</td>
               <th scope="row">Batman: Knightfall Parte 1</th>
               <td>Pelicula animada.</td>
-              <td>Adaptación del icónico cómic en formato de trilogía animada con clasificación R.</td>
+              <td>
+                Adaptación del icónico cómic en formato de trilogía animada con
+                clasificación R.
+              </td>
             </tr>
 
             <tr>
@@ -201,36 +258,43 @@
             <tr>
               <th scope="row">Clayface</th>
               <td>Pelicula live-action</td>
-              <td>Película de horror corporal enfocada en este clásico villano del murciélago.</td>
+              <td>
+                Película de horror corporal enfocada en este clásico villano del
+                murciélago.
+              </td>
             </tr>
 
             <tr>
               <td>2028</td>
               <th scope="row">The Batman Part II</th>
               <td>Pelicula live-action</td>
-              <td>Secuela de la película de Matt Reeves, con Robert Pattinson retomando el papel del caballero oscuro.</td>
+              <td>
+                Secuela de la película de Matt Reeves, con Robert Pattinson
+                retomando el papel del caballero oscuro.
+              </td>
             </tr>
 
             <tr>
               <td>TBA</td>
               <th scope="row">The Batman: The Brave and the Bold</th>
               <td>Pelicula live-action</td>
-              <td>Reinico oficial del héroe dentro del nuevo universo de películas de James Gunn.</td>
+              <td>
+                Reinico oficial del héroe dentro del nuevo universo de películas
+                de James Gunn.
+              </td>
             </tr>
           </tbody>
 
           <tfoot>
             <tr>
               <td colspan="4">
-                Nota: TBA significa "To Be Announced" (Por anunciarse), indicando que la fecha de estreno aún no ha sido confirmada.
+                Nota: TBA significa "To Be Announced" (Por anunciarse),
+                indicando que la fecha de estreno aún no ha sido confirmada.
               </td>
             </tr>
           </tfoot>
-
         </table>
       </section>
-       
-
 
       <p class="volver"><a href="#inicio">Volver al inicio de la página</a></p>
     </main>

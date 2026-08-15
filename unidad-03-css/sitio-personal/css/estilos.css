@@ -216,3 +216,14 @@ figure {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.otros {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.dl-img {
+    width: 100%;
+    height: 360px;
+    border-radius: 6px;
+}
