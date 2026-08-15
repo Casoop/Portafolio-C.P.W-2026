@@ -18,7 +18,7 @@ body {
     line-height: 1.6; /*Tamaño de reglon*/
     color: #8A95A5;
     background-color: #0B0E14;
-    padding-top: 180px;
+    padding-top: 120px;
 }
 
 main { /*En el css de sitio demo esto aparece como ".contenedor"*/
@@ -64,7 +64,7 @@ footer {
     padding: 30px;
 }
 
-main p, main blockquote {
+main p, main blockquote, li {
     max-width: 70ch;
 }
 
@@ -75,11 +75,13 @@ blockquote {
 
 /*Transformación y espacio*/
 header nav ul {
+    display: flex; /*Activa flexbox para la lista desordenada*/
+    gap: 15px;
     list-style-type: none;
 }/*quita las viñetas y el subrayado*/
 
-header nav li {
-    display: inline-block;
+/*header nav li {
+    display: inline-block; /*se descarta en favor de fexbox
     margin-right: 20px;
 }/*Coloca las opciones de menú en línea, uno al lado de otro*/
 
@@ -91,11 +93,15 @@ header nav a {
     padding: 10px 15px;
 }
 
+header nav {
+    align-self: center;
+}
+
 /*Aplicar estilos a clases*/
-.subtitulo {
+/*.subtitulo {             /*debido a que el subtitulo fue comentado esta linea ya no tiene utilidad
     text-align: center;
     font-size: 18px;
-}
+}*/
 
 .volver {
     padding: 20px 0px 20px 0px;
@@ -104,6 +110,10 @@ header nav a {
 
 /*Aplicar estilos a IDs*/
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -113,7 +123,7 @@ header nav a {
     padding: 30px;
     border-radius: 10px;
 
-    background-image: url(../Recursos/fondo1.jpg);
+    background-image: url(../Recursos/fondo1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,7 +137,12 @@ header nav a {
 
 
 /*estilos a enlaces*/
-nav a, footer a, .menu-anclas a, .volver a {
+nav a {
+    color: #8A95A5;
+    transition: 0.3s;
+}
+
+footer a, .menu-anclas a, .volver a {
     color: #3B629B;
     transition: 0.3s;
 }
