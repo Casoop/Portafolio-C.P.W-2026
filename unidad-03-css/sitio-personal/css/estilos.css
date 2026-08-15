@@ -172,7 +172,7 @@ article p::first-letter {
 }
 
 /*border a los elementos de la galeria.html*/
-figure, .img_simple {
+figure {
     border: 1px solid #1C2D42;
     border-radius: 6px;
     padding: 12px;
@@ -198,4 +198,9 @@ figure, .img_simple {
     flex-direction: column;
     margin-bottom: 20px;
     justify-content: center;
+}
+
+.galeria-img {
+    display: flex;
+    gap: 20px;
 }
