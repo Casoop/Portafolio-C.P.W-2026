@@ -204,9 +204,15 @@ figure {
     justify-content: center;
 }
 
-.galeria-img {
+/*.galeria-img {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     flex-basis: 0px;
+    gap: 20px;
+}*/
+
+.galeria-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
