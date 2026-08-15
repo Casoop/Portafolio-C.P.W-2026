@@ -88,7 +88,7 @@ header nav ul, main div ul {
 
 header nav a {
     text-transform: uppercase;
-    font-style: 1px;
+    letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
