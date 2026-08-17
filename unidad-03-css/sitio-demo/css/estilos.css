@@ -204,7 +204,7 @@ body {
 aside {
     padding: 20px;
     border: 2px solid #c55a11;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
 } /*En este caso el padding aplica a los 4 lados a la vez
 padding: 10px 20px aplica vertical y horizontal
 padding: 10px 20px 15px 5px aplica a los 4 lados valores distintos, en el sentido de las manillas del reloj*/
@@ -481,3 +481,43 @@ form small {
     font-size: 0.8rem;
     color: #6b7280;
 }/*Los <small> que acompañan a los campos con los textos "minimo 8 caracteres.  Entre 1 y 8 sesiones, etc"*/
+
+/*Estilizar el botón con estados*/
+.boton, .boton-secundario {
+    background-color: #c55a11;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*los 3 estados: 1. Hover*/
+
+/*Estado 1: Hover: más oscuro al pasar el cursor*/
+.boton:hover {
+    background-color: #a8490e;
+}
+
+/*Estado 2: Active: aun más oscuro mientras se pulsa*/
+.boton:active {
+    background-color: #8a3b0b;
+}
+
+/*Estado 3: Focus: */
+.boton:focus {
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
+/*variante secundaria*/
+.boton-secundario {
+    background-color: #6b7280;
+}
+
+.boton-secundario:hover {
+    background-color: #4b5563;
+}
