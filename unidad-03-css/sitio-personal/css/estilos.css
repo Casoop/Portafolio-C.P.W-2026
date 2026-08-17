@@ -72,6 +72,16 @@ main p, main blockquote, li {
     max-width: 70ch;
 }
 
+/*margenes y padding para las listas*/
+main ul, main ol {
+    padding-left: 24px;
+    margin-top: 16px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
 blockquote {
     font-style: italic;
     color: white;
@@ -175,7 +185,7 @@ article p::first-letter {
     color: white;
 }
 
-/*border a los elementos de la galeria.html*/
+/*border a los elementos de la galeria.html / las listas descriptivas*/
 figure {
     border: 1px solid #1C2D42;
     border-radius: 6px;
@@ -226,4 +236,31 @@ figure {
     width: 100%;
     height: 360px;
     border-radius: 6px;
+}
+
+/*estructura para grid-template-areas*/
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "cabecera cabecera"
+        "sec1 sec2"
+        "comentario comentario"
+    ;
+}
+
+.cabecera {
+    grid-area: cabecera;
+}
+
+.sec1 {
+    grid-area: sec1;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.comentario {
+    grid-area: comentario;
 }
