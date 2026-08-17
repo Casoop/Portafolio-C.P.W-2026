@@ -536,3 +536,9 @@ form small {
     12px: desenfoque, cuanto mayor este valor, más difuso
     rgba: color con transparencia*/
 }
+
+/*tarjeta interactiva*/
+.tarjeta figure:hover {
+    transform: translateY(-5px); /*valor negativo va hacia arriba*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
