@@ -300,9 +300,11 @@ tfoot td {
 
 /*Las figuras de la galeria.html*/
 figure {
+    background: white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /*los 5 valores de position:
@@ -520,4 +522,17 @@ form small {
 
 .boton-secundario:hover {
     background-color: #4b5563;
+}
+
+.tarjeta {
+    background: rgb(246, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);*/
+
+    /*0: desplazamiento horizontal. 
+    4px deplazamiento vertical. 
+    12px: desenfoque, cuanto mayor este valor, más difuso
+    rgba: color con transparencia*/
 }
