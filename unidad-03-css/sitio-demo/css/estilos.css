@@ -319,11 +319,11 @@ fixed: se ubica respecto a la ventana. No se mueve al desplazarse.
 sticky: Fluye normal hasta llegar a un umbral, y entonces se pega*/
 
 .figura-destacada {
-    position: relative;/*posiciona como padre y este no se mueve*/
+    position: relative;/*posiciona como padre y este no se mueve. Es referencia a hijos absolutos*/
 }
 
 .figura-destacada:hover .etiqueta {
-    position: relative; /*posiciona como padre y este no se mueve. Es referencia a hijos absolutos*/
+    transform: scale(1.1) rotate(-3deg);
 }
 
 .etiqueta {
@@ -559,4 +559,22 @@ form small {
     transform: rotate(5deg);/*gira .grados*/
     transform: skew(10deg);/*inclina .grados*/
     transform: translateY(-5px) scale(1.03);
+}
+
+
+/*Definir la transición*/
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Aplicar el efecto*/
+.tarjeta {
+    animation: aparecer 0.6s ease-out;
 }
