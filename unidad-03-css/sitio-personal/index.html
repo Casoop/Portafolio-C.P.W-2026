@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
+
   <body>
     <!-- CABECERA -->
     <header id="inicio">
@@ -41,7 +42,7 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main id="contenido">
+    <main class="estructura">
       <!-- Índice con anclas internas -->
       <div class="menu-anclas">
         <h2>En esta página</h2>
@@ -53,8 +54,8 @@
         </ul>
       </div>
 
-      <article>
-        <h2>Sobre este sitio</h2>
+      <aside class="lateral">
+        <h3>Sobre este sitio</h3>
 
         <p>
           Este es un sitio web personal dedicado a la historia y el universo de
@@ -65,9 +66,11 @@
           adapataciones mas importantes, así como una galería de imágenes y un
           formulario de contacto para los visitantes.<br />
         </p>
+      </aside>
 
+      <article class="contenido">
         <section id="origen">
-          <h3>La muerte de Bruce Wayne y el nacimiento de Batman</h3>
+          <h2>La muerte de Bruce Wayne y el nacimiento de Batman</h2>
 
           <p>
             <strong> Bruce Wayne</strong> nació como el hijo del Dr. Thomas
@@ -165,11 +168,11 @@
         </section>
       </article>
 
-      <p class="volver"><a href="#inicio">Volver al inicio de la página</a></p>
+      <!--<p class="volver"><a href="#inicio">Volver al inicio de la página</a></p>-->
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
+    <footer class="pie">
       <h2>Contacto</h2>
       <address>
         Diseñador del sitio: Elías Guzman Castro<br />

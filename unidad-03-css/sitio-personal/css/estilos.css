@@ -239,28 +239,29 @@ figure {
 }
 
 /*estructura para grid-template-areas*/
-.formulario {
+.estructura {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas: 
-        "cabecera cabecera"
-        "sec1 sec2"
-        "comentario comentario"
+        "cabecera  cabecera"
+        "lateral   contenido"
+        "pie       pie"
     ;
 }
 
-.cabecera {
+ .menu-anclas {
     grid-area: cabecera;
 }
 
-.sec1 {
-    grid-area: sec1;
+.lateral {
+    grid-area: lateral;
 }
 
-.sec2 {
-    grid-area: sec2;
+ .contenido {
+    grid-area: contenido;
 }
 
-.comentario {
-    grid-area: comentario;
+.pie {
+    grid-area: pie;
 }
