@@ -590,6 +590,20 @@ form small {
 
 .etiqueta {
     animation: pulso 2s ease-out infinite;
-    animation-iteration-count: 5;
-    animation-direction: reverse;
+    /*animation-iteration-count: 5;
+    animation-direction: reverse;*/
+}
+
+/*Aplicación de filtros */
+.galeria-grid img:hover {
+    filter: grayscale(1);
+    /*transition: filter 0.4s ease;*/
+    /*filter: blur(2px);
+    filter: brightness(1.2);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: invert(90%);
+    filter: opacity(50%);*/
+    filter: contrast(1.2) brightness(1.1);
 }
