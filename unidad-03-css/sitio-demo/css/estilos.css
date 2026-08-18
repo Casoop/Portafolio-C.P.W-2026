@@ -547,6 +547,12 @@ form small {
 
 /*tarjeta interactiva*/
 .tarjeta figure:hover {
-    transform: translateY(-5px); /*valor negativo va hacia arriba*/
+    transform: translateY(-10px); /*valor negativo va hacia arriba*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);/*Escala .1 = del tamaño original*/
+    transform: scale(1.1, 0.9);/*El primer valor afecta a X y el segundo a Y por separado*/
+    transform: translateY(-5px);/*Desplaza .negativo=Hacia arriba*/
+    transform: rotate(5deg);/*gira .grados*/
+    transform: skew(10deg);/*inclina .grados*/
+    transform: translateY(-5px) scale(1.03);
 }
