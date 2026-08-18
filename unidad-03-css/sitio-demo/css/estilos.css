@@ -123,6 +123,18 @@ header nav a {
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
+
+    /*estilos SOLO a enlaces dentro del nav*/
+    color:#fff;
+    margin-right: 15px;
+    transition: color 0.4s; /*cambio suave al pasar el mouse*/
+
+    /*ease: Arranca lento, acelera y frena. Por defecto.
+      linear: Velocidad constante.
+      ease-in: Arranca lento
+      ease-out: Sale lento
+      easein-out: lento en los 2 extremos
+      */
 }
 
 header nav {
@@ -160,16 +172,8 @@ header nav {
     top: 0;
 }*/
 
-
-/*estilos SOLO a enlaces dentro del nav*/
-nav a {
-    color:#fff;
-    margin-right: 15px;
-    transition: color 0.3s; /*cambio suave al pasar el mouse*/
-}
-
 /*Pseudo-clase: hover*/
-nav a:hover {
+header nav a:hover {
     color: #f8cbad; /*al pasar el cursor*/
 }
 
@@ -522,6 +526,10 @@ form small {
 
 .boton-secundario:hover {
     background-color: #4b5563;
+}
+
+.boton {
+    transition: background-color 0.3s ease;
 }
 
 .tarjeta {
