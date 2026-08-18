@@ -130,7 +130,7 @@ _Portada del sitio personal al cerrar la Unidad 2._
 |  S16   | Flexbox                    | trabajamos con propiedades de flexbox para posicionar cajas y sus elementos |    [ver](unidad-03-css/sitio-demo/galeria.html)     |     [ver](recursos/S16-flexbox.png)     |
 |  S17   | CSS Grid                   | trabajamos con grid template                                                |    [ver](unidad-03-css/sitio-demo/galeria.html)     |      [ver](recursos/S17-grid.png)       |
 |  S18   | Componentes estilizados    | Agrego tarjetas con interactividad, estilizamos formulario y tablas         |   [ver](unidad-03-css/sitio-demo/css/estilos.css)   |         [ver](recursos/S18.png)         |
-|  S19   | Animaciones y filtros      |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
+|  S19   | Animaciones y filtros      | Trabajo animaciones, transiciónes, transformaciones y filtros               |    [ver](unidad-03-css/sitio-demo/galeria.html)     |   [ver](recursos/S19-animaciones.png)   |
 |  S20   | SCSS y repaso              |                                                                             |                [ver](unidad-03-css/)                |            [ver](recursos/)             |
 
 </details>
