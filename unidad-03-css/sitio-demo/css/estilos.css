@@ -123,6 +123,18 @@ header nav a {
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
+
+    /*estilos SOLO a enlaces dentro del nav*/
+    color:#fff;
+    margin-right: 15px;
+    transition: color 0.4s; /*cambio suave al pasar el mouse*/
+
+    /*ease: Arranca lento, acelera y frena. Por defecto.
+      linear: Velocidad constante.
+      ease-in: Arranca lento
+      ease-out: Sale lento
+      easein-out: lento en los 2 extremos
+      */
 }
 
 header nav {
@@ -160,16 +172,8 @@ header nav {
     top: 0;
 }*/
 
-
-/*estilos SOLO a enlaces dentro del nav*/
-nav a {
-    color:#fff;
-    margin-right: 15px;
-    transition: color 0.3s; /*cambio suave al pasar el mouse*/
-}
-
 /*Pseudo-clase: hover*/
-nav a:hover {
+header nav a:hover {
     color: #f8cbad; /*al pasar el cursor*/
 }
 
@@ -315,7 +319,11 @@ fixed: se ubica respecto a la ventana. No se mueve al desplazarse.
 sticky: Fluye normal hasta llegar a un umbral, y entonces se pega*/
 
 .figura-destacada {
-    position: relative;/*posiciona como padre y este no se mueve*/
+    position: relative;/*posiciona como padre y este no se mueve. Es referencia a hijos absolutos*/
+}
+
+.figura-destacada:hover .etiqueta {
+    transform: scale(1.1) rotate(-3deg);
 }
 
 .etiqueta {
@@ -524,6 +532,10 @@ form small {
     background-color: #4b5563;
 }
 
+.boton {
+    transition: background-color 0.3s ease;
+}
+
 .tarjeta {
     background: rgb(246, 245, 245);
     padding: 20px;
@@ -539,6 +551,59 @@ form small {
 
 /*tarjeta interactiva*/
 .tarjeta figure:hover {
-    transform: translateY(-5px); /*valor negativo va hacia arriba*/
+    transform: translateY(-10px); /*valor negativo va hacia arriba*/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);/*Escala .1 = del tamaño original*/
+    transform: scale(1.1, 0.9);/*El primer valor afecta a X y el segundo a Y por separado*/
+    transform: translateY(-5px);/*Desplaza .negativo=Hacia arriba*/
+    transform: rotate(5deg);/*gira .grados*/
+    transform: skew(10deg);/*inclina .grados*/
+    transform: translateY(-5px) scale(1.03);
+}
+
+
+/*Definir la transición*/
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Aplicar el efecto*/
+.tarjeta {
+    animation: aparecer 0.6s ease-out;
+}
+
+@keyframes pulso {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.etiqueta {
+    animation: pulso 2s ease-out infinite;
+    /*animation-iteration-count: 5;
+    animation-direction: reverse;*/
+}
+
+/*Aplicación de filtros */
+.galeria-grid img:hover {
+    filter: grayscale(1);
+    /*transition: filter 0.4s ease;*/
+    /*filter: blur(2px);
+    filter: brightness(1.2);
+    filter: contrast(1.5);
+    filter: saturate(2);
+    filter: sepia(60%);
+    filter: invert(90%);
+    filter: opacity(50%);*/
+    filter: contrast(1.2) brightness(1.1);
 }
