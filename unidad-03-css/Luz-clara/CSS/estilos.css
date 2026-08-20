@@ -19,7 +19,7 @@ Se declaran dentro de :root, que represente el elemento html y es el ancestro de
 
     /*Tipografía*/
     --fuente-titulo: Georgia, 'Times New Roman', serif;
-    --fuente-titulo: 'Segoe UI', Arial, sans-serif;
+    --fuente-texto: 'Segoe UI', Arial, sans-serif;
 
     /*Espaciado. Conversión 1rem = 10px*/
     --esp-xs: 0.8rem; /*8px*/
@@ -51,4 +51,12 @@ html {
     font-size: 62.5%; /*por omision el navegador usa 16px para el tamaño base. el 62.5% de 16 es exactamente 10. Esta relacionado a la accesibilidad y la parte responsive*/
 
     scroll-behavior: smooth; /*Provoca saltos suaves al usar navegación por anclas*/
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
 }
