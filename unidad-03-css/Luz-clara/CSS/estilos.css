@@ -31,8 +31,8 @@ Se declaran dentro de :root, que represente el elemento html y es el ancestro de
     /*Otros elementos*/
     --radio: 0.6rem; /*6pc*/
     --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06); /*apenas separado*/
-    --sombra-1: 0 0.4rem 1.2rem rgba(0,0,0,.10); /*tarjetas*/
-    --sombra-1: 0 0.8rem 2.0rem rgba(0,0,0,.16); /*elementos elevados*/
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10); /*tarjetas*/
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16); /*elementos elevados*/
     --transicion: 0.25s ease;
     --ancho-max: 120rem; /*1200px*/
 }
