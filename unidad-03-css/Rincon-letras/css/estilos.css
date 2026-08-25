@@ -165,3 +165,16 @@ img {
     color: var(--color-acento);
     background-color: var(--color-papel-alt);
 }
+
+.hero {
+    background: linear-gradient(135deg, var(--color-marca), var(--color-acento-osc));
+    color: var(--color-blanco);
+    padding: var(--esp-xl) var(--esp-md);
+    border-radius: var(--radio);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--esp-sm);
+}
