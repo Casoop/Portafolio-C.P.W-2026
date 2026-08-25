@@ -4,11 +4,13 @@
     --color-suave: #6b6259; 
     --color-marca: #5b3a29; 
     --color-acento: #a6572f; 
-    --color-acento-osc: #a46f2e; 
-    --color-fondo: #fafaf8; 
-    --color-fondo-alt: #f0eee9; 
-    --color-linea: #dddad3;
+    --color-acento-osc: #7f4224; 
+    --color-papel: #fbf8f3; 
+    --color-papel-alt: #f1eae0; 
+    --color-linea: #ddd2c4;
     --color-blanco: #fff; 
+    --color-error: #b23a2f;
+    --color-exito: #2e7d32;
 
     /*Tipografía*/
     --fuente-titulo: Georgia, 'Times New Roman', serif;
@@ -18,8 +20,8 @@
     --esp-xs: 0.8rem; /*8px*/
     --esp-sm: 1.6rem; /*16px*/
     --esp-md: 2.4rem; /*24px*/
-    --esp-lg: 4rem; /*40px*/
-    --esp-xl: 8rem; /*80px*/
+    --esp-lg: 4.0rem; /*40px*/
+    --esp-xl: 7.2rem; /*80px*/
 
     /*Otros elementos*/
     --radio: 0.6rem; /*6pc*/
@@ -27,7 +29,7 @@
     --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10); /*tarjetas*/
     --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16); /*elementos elevados*/
     --transicion: 0.25s ease;
-    --ancho-max: 120rem; /*1200px*/
+    --ancho-max: 114rem; /*1140px*/
 }
 
 /*Reset y base*/
@@ -46,5 +48,37 @@ body {
     font-family: var(--fuente-texto);
     line-height: 1.6;
     color: var(--color-tinta);
-    background-color: var(--papel);
+    background-color: var(--color-papel);
+}
+
+/*Selectores de etiqueta Estilos para titulos*/
+h1, h2, h3 {
+    font-family: var(--fuente-titulo);
+    line-height: 1.2;
+    color: var(--color-marca);
+}
+
+h1 {font-size: 4.4rem;}
+h2 {font-size: 3.0rem;}
+h2 {font-size: 2.0rem;}
+
+p {margin-bottom: var(--esp-sm);}
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*CONTENEDORES*/
+#contenido {
+    max-width: var(--ancho-max);
+    margin-left: auto;
+    margin-right: auto; /*Junto con left centran el contenido*/
+    padding: var(--esp-lg) var(--esp-md);
 }
