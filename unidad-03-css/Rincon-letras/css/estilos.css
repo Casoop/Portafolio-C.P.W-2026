@@ -191,3 +191,13 @@ img {
     margin-bottom: var(--esp-xs);
     opacity: 0.94;
 }
+
+.rejilla-servicios {
+    display: flex;
+    gap: var(--esp-md);
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex: 1 1 28rem;/*hace resposive sin media queries*/
+}
