@@ -200,4 +200,13 @@ img {
 
 .tarjeta {
     flex: 1 1 28rem;/*hace resposive sin media queries*/
+    background-color: var(--color-blanco);
+    padding: var(--esp-md);
+    border: 0.1rem solid var(--color-linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transicion), box-shadow var(--transicion);
 }
