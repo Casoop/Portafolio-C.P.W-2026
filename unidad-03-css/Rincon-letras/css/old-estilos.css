@@ -1,0 +1,253 @@
+/*Reinicio de estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Evita que el contenido de la pagina se desborde*/
+}
+
+html {
+    font-size: 61.1%;/*Permite que 1rem sea equivalente a 10px*/
+}
+
+input, button, textarea, select {
+    font: inherit; /*Permite que las secciones mencionadas hereden la fuente utilizada*/
+}
+
+/*Tamaños de texto: Títulos*/
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Nunito', Arial;
+    padding: 0rem 5rem;
+    justify-content: center;
+    background-color: #FBF8F3;
+}
+
+#contenido  {
+    max-width: 120rem;
+    justify-items: center;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: 'Playfair Display', sans-serif, Arial;
+    color: #593528;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    position: sticky;
+    z-index: 100;
+    background-color: white;
+}
+
+
+
+#pie {
+    background-color: #593528;
+    padding: 3rem 10rem 2rem;
+    color: white;
+}
+
+#pie a {
+    color: white;
+}
+
+.creditos {
+    text-align: center;
+}
+
+.datos-contacto, #servicios > h2, #historia > h2, #existencias > h2, #categorias > h2, #pedido > h2, #cabecera {
+    border-bottom: 2px solid #c0bab3; /*borde inferior que sirve de separación*/
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: space-evenly; /*da el mismo espacio entre elementos ademas de alrededor de los mismos*/
+    gap: 1.6rem;
+    list-style: none; /*Quita el punto de la lista*/
+}
+
+.menu-principal a {
+    text-decoration: none; /*Quita el la linea inflerior del link*/
+    text-transform: uppercase;
+    color: black;
+    transition: 0.25s ease;
+}
+
+.menu-principal a:hover {
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    background-color: #F1EAE0;
+    color: #A6572F;
+    
+}
+
+#portada {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    background-color: #7E4225;
+    padding: 2rem;
+}
+
+#portada p, #portada h2 {
+    max-width: 65ch; /*evita que el texto se pase de 65 caracteres mejorando la legibilidad*/
+    color: white;
+}
+
+.boton {
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    background-color: #A6572F;
+    color: white;
+    transition: 0.25s ease;
+    
+}
+
+.boton:hover {
+    background-color: white;
+    color: #A6572F;
+    transform: scale(1.1);
+}
+
+.boton:focus {
+    outline: 3px dashed white;
+}
+
+.boton-secundario {
+    background-color: #c0bab3;
+    color: black;
+}
+
+.boton-secundario:hover {
+    background-color: black;
+    color: #c0bab3;
+    transform: scale(1.1);
+}
+
+.rejilla-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-flow: row wrap;
+}
+
+.tarjeta {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    border: 2px solid #c0bab3;
+    margin: 2rem 0rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 35rem;
+}
+
+
+/*CITA*/
+.cita {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 0.5rem;
+    border-left: 6px solid #A6572F;
+
+}
+
+.cita-autoria {
+    position: relative;
+    text-align: right;
+    right: 30px;
+    bottom: 10px;
+}
+
+/*catalogo.html*/
+
+/*indice interno*/
+.glosario {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "nom1 des1"
+    "nom2 des2"
+    "nom3 des3";
+}
+
+.nom1 {
+    grid-area: nom1;
+}
+
+.nom2 {
+    grid-area: nom2;
+}
+
+.nom3 {
+    grid-area: nom3;
+}
+
+.des1 {
+    grid-area: des1;
+}
+
+.des2 {
+    grid-area: des2;
+}
+
+.des3 {
+    grid-area: des3;
+}
+
+dl dd {
+    grid-area: des;
+}
+
+/*Tabla*/
+.tabla-catalogo {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tabla-catalogo th {
+    padding: 1rem;
+}
+
+thead tr {
+    background-color: #5B3A29;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+/*Formulario*/
+
+.grupo-campos {
+    border: 2px solid #c0bab3;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.8rem;
+}
+
+.campo input:focus {
+    outline: 3px solid green;
+}
