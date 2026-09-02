@@ -1,5 +1,13 @@
 /*css/estilos.css*/
 
+:root {
+  /*  ESPACIADO  */
+  --esp-xs: 0.8rem;    /*  8px */
+  --esp-sm: 1.6rem;    /* 16px */
+  --esp-md: 2.4rem;    /* 24px */
+  --esp-lg: 4.0rem;    /* 40px */
+  --esp-xl: 8.0rem;    /* 80px */
+}
 
 /*reset básico*/
 *{
@@ -9,16 +17,17 @@
 }
 
 html {
-    font-size: 100%; /*Al no declarse otro valor se toma el por defecto 16px, el 100% indica que la fuente no presenta reducción*/
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Lora', Arial, Helvetica, sans-serif;
-    font-size: 1rem; /*tamaño de fuente relativo a la raíz (html)*/
+    font-size: 1.6rem; /*tamaño de fuente relativo a la raíz (html)*/
     line-height: 1.6; /*Tamaño de reglon*/
     color: #8A95A5;
     background-color: #0B0E14;
-    padding-top: 120px;
+    padding-top: 260px;
 }
 
 main { /*En el css de sitio demo esto aparece como ".contenedor"*/
@@ -27,19 +36,20 @@ main { /*En el css de sitio demo esto aparece como ".contenedor"*/
     padding: 30px;
 }
 
+/*tamaños movil*/
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem; /* 32px */
     font-weight: 700;
     text-align: center;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem; /* 24px */
     font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
@@ -50,10 +60,10 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
-p {
+/*p {
     font-size: 1rem;
-    font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)*/
-}
+    font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)
+}*/
 
 /*header {
     /*No es necesario ya que #Inicio sobre escribiria lo puesto aca: background-color, color, padding, border-radius
@@ -61,7 +71,9 @@ p {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: var(--esp-sm);
+
     justify-content: space-between;
     align-items: center;
     background-color: #1C2D42;
@@ -103,7 +115,7 @@ header nav ul, main div ul {
 header nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -126,6 +138,8 @@ header nav {
 /*Aplicar estilos a IDs*/
 #inicio {
     display: flex;
+    flex-direction: column;
+    gap: var(--esp-sm);
 
     justify-content: center;
     justify-content:space-between;
@@ -177,7 +191,7 @@ tbody tr:nth-child(odd){
 
 /*Pseudo elemento ::first-letter y ::selection*/
 article p::first-letter {
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 ::selection {
@@ -203,7 +217,7 @@ figure {
     background-color:#1C2D42;
     color: white;
     border-radius: 4px;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     z-index: 10;
 } 
 
@@ -214,6 +228,11 @@ figure {
     justify-content: center;
 }
 
+.menu-anclas-elementos {
+    display: flex;
+    flex-direction: column;
+}
+
 /*.galeria-img {
     display: flex;
     flex-wrap: wrap;
@@ -222,8 +241,8 @@ figure {
 }*/
 
 .galeria-img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -264,4 +283,48 @@ figure {
 
 .pie {
     grid-area: pie;
+}
+
+/*ESCALA - TABLET*/
+@media (min-width: 768px) {
+  h1 {font-size: 4.0rem;}
+  h2 {font-size: 2.8rem;}
+  h3 {font-size: 1.9rem;}
+
+
+  body {
+    padding-top: 600px;
+  }
+
+  #inicio {
+    flex-direction: row;
+    gap: var(--esp-md);
+  }
+
+  .pie {
+    flex-direction: row;
+    gap: var(--esp-md);
+  }
+
+  .menu-anclas-elementos {
+    display: flex;
+    flex-direction: row;
+}
+} /*NOTA el modo tablet necesita correciones en el header*/
+
+/*ESCALA - DESKTOP*/
+@media (min-width: 1024px) {
+  h1 {font-size: 4.8rem;}
+  h2 {font-size: 3.2rem;}
+  h3 {font-size: 2.0rem;}
+
+  body {
+    padding-top: 120px;
+  }
+
+  .galeria-img {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 }
