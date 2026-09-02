@@ -2004,5 +2004,45 @@ en una pantalla de 1200px se aplican las 3 reglas
 Donde se repite una propiedad, gana la ultima.
 Por eso el orden importa: de menor a mayor.
 
-si la regla de 1024 estuviera antes de la regla de 768, la última alularía en pantallas grandes
-*/
+si la regla de 1024 estuviera antes de la regla de 768, la última alularía en pantallas grandes*/
+
+/*LA ESCALA COMPLETA, POR TRAMOS*/
+
+/*BASE - TELEFONO*/
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h1 {font-size: 1.8rem;}
+body {font-size: 3.6rem;}
+
+/*ESCALA - TABLET*/
+@media (min-width: 768px) {
+  h1 {font-size: 4.0rem;}
+  h2 {font-size: 2.8rem;}
+  h1 {font-size: 1.9rem;}
+}
+
+@media (min-width: 1024px) {
+  h1 {font-size: 4.8rem;}
+  h2 {font-size: 3.2rem;}
+  h1 {font-size: 2.0rem;}
+
+  /*LA TABLA DE: contacto.html*/
+}
+
+.tabla-envoltorio { /*despues de los 360px no hay forma rasonable de que la tabla quepa sin perder la relación entre los datos*/
+    overflow-x: auto; /*crea su propia barra de desplazamiento*/
+  }
+
+@media (max-width: 768px) {/*se usa mas en lugar de min porque el media query ataca la parte movil directamente*/
+  .tabla th,
+  .tabla td {
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main p {max-width: 65ch;}/*mejor lectura para los textos*/
+}
+
+/*en movil no hace falta adaptar el texto de los párrafos, la pantalla lo hace. la adaptación es para tables hacia arriba por comodidad*/
