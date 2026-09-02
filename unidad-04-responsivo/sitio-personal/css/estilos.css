@@ -1,0 +1,267 @@
+/*css/estilos.css*/
+
+
+/*reset básico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /*Al no declarse otro valor se toma el por defecto 16px, el 100% indica que la fuente no presenta reducción*/
+}
+
+body {
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 1rem; /*tamaño de fuente relativo a la raíz (html)*/
+    line-height: 1.6; /*Tamaño de reglon*/
+    color: #8A95A5;
+    background-color: #0B0E14;
+    padding-top: 120px;
+}
+
+main { /*En el css de sitio demo esto aparece como ".contenedor"*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)*/
+}
+
+/*header {
+    /*No es necesario ya que #Inicio sobre escribiria lo puesto aca: background-color, color, padding, border-radius
+}*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C2D42;
+    padding: 30px;
+}
+
+main p, main blockquote, li {
+    max-width: 70ch;
+}
+
+/*margenes y padding para las listas*/
+main ul, main ol {
+    padding-left: 24px;
+    margin-top: 16px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+blockquote {
+    font-style: italic;
+    color: white;
+}
+
+/*Transformación y espacio*/
+header nav ul, main div ul {
+    display: flex; /*Activa flexbox para la lista desordenada*/
+    gap: 15px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}/*quita las viñetas y el subrayado*/
+
+/*header nav li {
+    display: inline-block; /*se descarta en favor de fexbox
+    margin-right: 20px;
+}/*Coloca las opciones de menú en línea, uno al lado de otro*/
+
+header nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav {
+    align-self: center;
+}
+
+/*Aplicar estilos a clases*/
+/*.subtitulo {             /*debido a que el subtitulo fue comentado esta linea ya no tiene utilidad
+    text-align: center;
+    font-size: 18px;
+}*/
+
+.volver {
+    padding: 20px 0px 20px 0px;
+}
+
+
+/*Aplicar estilos a IDs*/
+#inicio {
+    display: flex;
+
+    justify-content: center;
+    justify-content:space-between;
+    align-items: baseline;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+
+    background-image: url(../Recursos/fondo1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 100;
+}
+
+/*#contenido {
+    padding: 30px;
+}*/
+
+
+/*estilos a enlaces*/
+nav a {
+    color: #8A95A5;
+    transition: 0.3s;
+}
+
+footer a, .menu-anclas a, .volver a {
+    color: #3B629B;
+    transition: 0.3s;
+}
+
+/*Pseudo-clase: Hover*/
+nav a:hover, footer a:hover, .volver a:hover, .menu-anclas a:hover  {
+    color: #FCD116;
+}
+
+/*Pseudo-clase :nth-child: filas cebra en la tabla*/
+tbody tr:nth-child(odd){
+    background-color: #1C2D42;
+}
+/*Nota de Elías: lo cambie por odd para que la tabla de viese mejor*/
+
+/*Pseudo elemento ::first-letter y ::selection*/
+article p::first-letter {
+    font-size: 26px;
+}
+
+::selection {
+    background-color: #3B629B;
+    color: white;
+}
+
+/*border a los elementos de la galeria.html / las listas descriptivas*/
+figure {
+    border: 1px solid #1C2D42;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.cita_destacada {
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:#1C2D42;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    z-index: 10;
+} 
+
+.menu-anclas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/*.galeria-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0px;
+    gap: 20px;
+}*/
+
+.galeria-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.otros {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.dl-img {
+    width: 100%;
+    height: 360px;
+    border-radius: 6px;
+}
+
+/*estructura para grid-template-areas*/
+.estructura {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "cabecera  cabecera"
+        "lateral   contenido"
+        "pie       pie"
+    ;
+}
+
+ .menu-anclas {
+    grid-area: cabecera;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+ .contenido {
+    grid-area: contenido;
+}
+
+.pie {
+    grid-area: pie;
+}
