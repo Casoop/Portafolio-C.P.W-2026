@@ -2045,4 +2045,36 @@ body {font-size: 3.6rem;}
   main p {max-width: 65ch;}/*mejor lectura para los textos*/
 }
 
-/*en movil no hace falta adaptar el texto de los párrafos, la pantalla lo hace. la adaptación es para tables hacia arriba por comodidad*/
+/*en movil no hace falta adaptar el texto de los párrafos, la pantalla lo hace. la adaptación es para tables hacia arriba por comodidad de lectura*/
+
+/*PUNTOS DE QUIEBRE 
+Base         hasta 767px        telefono
+768px        hasta 1023px       tableta
+1024px                          escritorio
+*/
+
+/*TABLETA . a partir de 768px
+@media (min-width: 768px) {
+cabecera y fila
+títulos mas grandes
+más relleno en las secciones
+}*/
+
+/*ESCRITORIO . a partir de 1024px
+@media (min-width: 1024px) {
+titulos a tamaño completo
+portada mas alta
+}*/
+
+/*AJUSTES SOLO PARA PANTALLA PEQUEÑA
+@media (min-width: 768px) {
+celdas de la tabla mas compactas
+}*/
+
+/*ACCESIBILIDAD DEL MOVIMIENTO
+@media (prefer-reduce-motion: reduce) {
+Va siempre al final de todo. desactiva las animaciones desde el so del dispositivo ne uso
+}*/
+
+/*estos encabezados NO son decorativos
+Quien abra esta hoja de estilos o usted mismo en 6 meses sepa o tenga una idea de lo que se hizo y la estrategia que se uso*/
