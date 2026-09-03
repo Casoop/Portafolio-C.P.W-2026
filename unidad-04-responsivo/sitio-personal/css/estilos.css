@@ -27,7 +27,7 @@ body {
     line-height: 1.6; /*Tamaño de reglon*/
     color: #8A95A5;
     background-color: #0B0E14;
-    padding-top: 260px;
+    margin-top: 180px;
 }
 
 main { /*En el css de sitio demo esto aparece como ".contenedor"*/
@@ -293,7 +293,7 @@ figure {
 
 
   body {
-    padding-top: 600px;
+    margin-top: 80px;
   }
 
   #inicio {
