@@ -2164,3 +2164,27 @@ Quien abra esta hoja de estilos o usted mismo en 6 meses sepa o tenga una idea d
     flex-direction: row;
   }
 }
+
+/*Usar orientación
+Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .portada {
+    min-height: 100vh;
+    padding: var(--esp-sm);
+  }
+
+  .portada-titulo {font-size: 2.4rem;}
+  .portada-bajada {font-size: 1.5rem;}
+} /*Esto se ultiliza al colocar el telefono en horizontal*/
+
+/*LA CONSULTAS DISPONIBLES
+@media (min-width: 768px) ancho mínimo
+@media (max-width: 768px) ancho maximo
+@media (min-height: 600px) alto mínimo
+@media (orientation: portrait) vertical
+@media (orientation: landscape) horizontal
+@media print impresion de la página
+@media (prefers-reduced-motion) preferencia de movimiento
+@media (prefers-color-scheme: dark) tema oscuro
+*/
