@@ -2262,6 +2262,35 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   .cita-texto {font-size: 2.2rem;}
 }
 
+/*Mostly Fluid a .mosaico en galeria.html*/
+/*Ajustes para teléfono*/
+@media (max-width: 600px) {
+  .mosaico {
+    grid-template-columns: 1fr;
+    /*Una sola columna de 360px, dos columnas de 180px las fots deja de apreciarse*/
+    grid-auto-rows: 24rem;
+  }
+
+  .pieza-ancha,
+  .pieza-alta,
+  .pieza-grande {
+    grid-column: auto;
+    grid-row: auto;
+    /*adaptar mosaico con piezas de distinto tamaño*/
+  }
+}
+
+/*Mostly Fluid a .mosaico en galeria.html*/
+/*tope para pantalla grande*/
+@media (min-width: 1400px) {
+  .mosaico {
+    max-width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Este patron no solo se enconje, tambien se detiene*/
+}
+
 /*LA CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
 @media (max-width: 768px) ancho maximo
