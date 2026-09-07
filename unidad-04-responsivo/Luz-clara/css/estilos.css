@@ -1064,6 +1064,13 @@ img {
   text-align: right;
 }
 
+/*Tiny Tweaks para base telefono*/
+#testimonio p,
+.cita-texto {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
 
 /* 12 · TABLA           tema de la S18
 
@@ -2230,6 +2237,29 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
        redondeadas dejan franjas del fondo que se ven como un error
        de encuadre.                                                   */
   }
+}
+
+/*Tiny Tweaks (pequeños cambios) para base tableta*/
+@media (min-width: 768px) {
+  #testimonio p {
+    font-size: 1.7rem;
+    max-width: 65ch;
+    /*El limite en la linea aparece despues de tableta*/
+  }
+
+  .cita { padding: var(--esp-lg);}
+  .cita-texto {font-size: 2.0rem;}
+}
+
+/*Tiny Tweaks (pequeños cambios) para base escritorio*/
+@media (min-width: 1024px) {
+  #testimonio p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    /*El limite en la linea aparece despues de escritorio*/
+  }
+
+  .cita-texto {font-size: 2.2rem;}
 }
 
 /*LA CONSULTAS DISPONIBLES

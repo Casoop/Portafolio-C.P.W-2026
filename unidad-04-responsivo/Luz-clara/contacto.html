@@ -18,39 +18,44 @@
 
   <!--  CABECERA · idéntica a la de index.html  -->
   <header id="cabecera" class="cabecera">
+      <a href="index.html" class="logo">
+        <!-- LOGO EN SVG · dibujado con código, no es una imagen -->
+        <svg
+          class="logo-icono"
+          width="38"
+          height="38"
+          viewBox="0 0 38 38"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Logo del Estudio Luz Clara: una cámara fotográfica"
+        >
+          <rect x="2" y="9" width="34" height="25" rx="4" fill="currentColor" />
+          <rect x="12" y="4" width="14" height="6" rx="2" fill="currentColor" />
+          <circle cx="19" cy="22" r="8" fill="#FFFFFF" />
+          <circle cx="19" cy="22" r="5" fill="currentColor" />
+          <circle cx="30" cy="15" r="2" fill="#FFFFFF" />
+        </svg>
+        <span class="logo-texto">Estudio Luz Clara</span>
+      </a>
 
-    <a href="index.html" class="logo">
-      <svg class="logo-icono" width="38" height="38" viewBox="0 0 38 38"
-           xmlns="http://www.w3.org/2000/svg" role="img"
-           aria-label="Logo del Estudio Luz Clara: una cámara fotográfica">
-        <rect x="2" y="9" width="34" height="25" rx="4" fill="currentColor"/>
-        <rect x="12" y="4" width="14" height="6" rx="2" fill="currentColor"/>
-        <circle cx="19" cy="22" r="8" fill="#FFFFFF"/>
-        <circle cx="19" cy="22" r="5" fill="currentColor"/>
-        <circle cx="30" cy="15" r="2" fill="#FFFFFF"/>
-      </svg>
-      <span class="logo-texto">Estudio Luz Clara</span>
-    </a>
-
-    <nav class="navegacion" aria-label="Navegación principal">
-      <!--MENU HAMBURGUESA-->
-      <input type="checkbox" id="abrir-menu" class="menu-control">
-      <label for="abrir-menu" id="menu-boton">
-        <span class="menu-barra"></span>
-        <span class="menu-barra"></span>
-        <span class="menu-barra"></span>
-        <span class="menu-texto">Menú</span>
-      </label>
-      <!--CIERRE MENÚ HAMBURGUESA-->
-      <ul class="menu">
-        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
-        <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
-        <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
-        <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
-      </ul>
-    </nav>
-
-  </header>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <!--MENU HAMBURGUESA-->
+        <input type="checkbox" id="abrir-menu" class="menu-control" />
+        <label for="abrir-menu" class="menu-boton">
+          <span class="menu-barra"></span>
+          <span class="menu-barra"></span>
+          <span class="menu-barra"></span>
+          <span class="menu-texto">Menú</span>
+        </label>
+        <!--CIERRE MENÚ HAMBURGUESA-->
+        <ul class="menu">
+          <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+          <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
+          <li><a href="nosotros.html" class="menu-enlace">Nosotros</a></li>
+          <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
   <main id="contenido">
 
