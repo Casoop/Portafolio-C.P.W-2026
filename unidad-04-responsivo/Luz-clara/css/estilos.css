@@ -2291,6 +2291,19 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
   /*Este patron no solo se enconje, tambien se detiene*/
 }
 
+/*Patron Column Drop: en zonas de columnas-tarjetas de index.html*/
+@media (min-width: 620px) and (max-width: 900px) {
+  .tarjeta {
+    flex: 1 1 calc(50% - var(--esp-md));
+    /*Fuerza a 2 por linea
+    Calc(). permite mezclar unidades 50% del contenedor menos el hueco*/
+  }
+  .tarjeta:last-child {
+    flex-basis: 100%;
+  }
+  /*la tercera tarjeta ocupa el ancho completo. Es una decisión estética porque se ve mejor una tarjeta ancha que angosta*/
+}
+
 /*LA CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
 @media (max-width: 768px) ancho maximo
