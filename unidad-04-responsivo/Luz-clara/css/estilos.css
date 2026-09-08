@@ -2442,7 +2442,6 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
     grid-template-columns: 24rem 1fr;
     gap: var(--esp-lg);
     align-items: center;
-    
   }
 }
 
