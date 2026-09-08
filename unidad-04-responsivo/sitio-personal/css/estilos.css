@@ -162,6 +162,12 @@ header nav {
     z-index: 100;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--esp-xs);
+}
+
 .logo-texto {
     font-size: 2.0rem;
     color: white;
