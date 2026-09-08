@@ -667,6 +667,7 @@ img {
   border-radius: var(--radio);
   box-shadow: var(--sombra-2);
   text-align: center;
+  align-items: center;
 
   display: flex;
   flex-direction: column;
