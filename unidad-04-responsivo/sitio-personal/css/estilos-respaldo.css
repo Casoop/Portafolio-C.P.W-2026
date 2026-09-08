@@ -1,37 +1,12 @@
 /*css/estilos.css*/
 
-/*1 - Variables*/
 :root {
-    /*Colores*/
-    --color-tinta:      #8A95A5;   /* el texto principal */
-    /*--color-suave:      #6B6B6B;   /* Sin uso por el momento */
-    --color-marca:      #2C3E50;  
-    --color-acento:     #FCD116;
-    /*--color-acento-osc: #A45F2E;   /* Sin uso por el momento */
-    --color-enlaces:    #3B629B;
-    --color-fondo:      #0B0E14;   /* blanco roto · no blanco puro */
-    --color-fondo-alt:  #1C2D42;   /* para alternar secciones */
-    /*--color-linea:      #DDDAD3;   /* Sin uso por el momento */
-    --color-blanco:     #FFFFFF;
-
-    /*  TIPOGRAFÍA  */
-    --fuente-titulo: 'roboto', Arial, Helvetica, sans-serif;
-    --fuente-texto:  'Lora', Arial, Helvetica, sans-serif;
-
-    /*  ESPACIADO  */
-    --esp-xs: 0.8rem;    /*  8px */
-    --esp-sm: 1.6rem;    /* 16px */
-    --esp-md: 2.4rem;    /* 24px */
-    --esp-lg: 4.0rem;    /* 40px */
-    --esp-xl: 8.0rem;    /* 80px */
-
-    /*  OTROS  */
-    --radio:      0.6rem;                             /*  6px */
-    --sombra-1:   0 0.2rem 0.6rem rgba(0,0,0,.06);  /* apenas separado */
-    --sombra-2:   0 0.4rem 1.2rem rgba(0,0,0,.10);  /* una tarjeta */
-    --sombra-3:   0 0.8rem 2.0rem rgba(0,0,0,.16);  /* elemento elevado */
-    --transicion: 0.25s ease;
-    --ancho-max:  120rem;                              /* 1200px */
+  /*  ESPACIADO  */
+  --esp-xs: 0.8rem;    /*  8px */
+  --esp-sm: 1.6rem;    /* 16px */
+  --esp-md: 2.4rem;    /* 24px */
+  --esp-lg: 4.0rem;    /* 40px */
+  --esp-xl: 8.0rem;    /* 80px */
 }
 
 /*reset básico*/
@@ -47,25 +22,16 @@ html {
 }
 
 body {
-    font-family: var(--fuente-texto);
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
     font-size: 1.6rem; /*tamaño de fuente relativo a la raíz (html)*/
     line-height: 1.6; /*Tamaño de reglon*/
-    color: var(--color-tinta);
-    background-color: var(--color-fondo);
-}
-
-/*Tipográfia*/
-h1, h2, h3 {
-    font-family: var(--fuente-titulo);
-    line-height: 1.2;
-    color: var(--color-blanco);
-
-    text-transform: capitalize;
-    letter-spacing: 1px;
+    color: #8A95A5;
+    background-color: #0B0E14;
+    margin-top: 180px;
 }
 
 main { /*En el css de sitio demo esto aparece como ".contenedor"*/
-    max-width: var(--ancho-max);
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
 }
@@ -74,31 +40,34 @@ main { /*En el css de sitio demo esto aparece como ".contenedor"*/
 h1 {
     font-size: 3.2rem; /* 32px */
     font-weight: 700;
+    text-align: center;
 }
+
 h2 {
     font-size: 2.4rem; /* 24px */
     font-weight: 700;
 }
+
 h3 {
-    font-size: 1.8rem; /* 18px */
+    font-size: 1.8rem;
     font-weight: 600;
 }
-p {
-    margin-bottom: var(--esp-sm);
+
+h1, h2, h3 {
+    color: white;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
-a {
-    color: var(--color-enlaces);
-    text-decoration: none;
-}
+/*p {
+    font-size: 1rem;
+    font-weight: 400; /*Este es el grosor default (No es estrictamente necesario ponerlo)
+}*/
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*Aca*/
+/*header {
+    /*No es necesario ya que #Inicio sobre escribiria lo puesto aca: background-color, color, padding, border-radius
+}*/
 
 footer {
     display: flex;
