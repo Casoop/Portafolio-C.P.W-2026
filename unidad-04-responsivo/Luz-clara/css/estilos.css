@@ -2347,7 +2347,7 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
 @media (max-width: 600px) {
   .mosaico {
     grid-template-columns: 1fr;
-    /*Una sola columna de 360px, dos columnas de 180px las fots deja de apreciarse*/
+    /*Una sola columna de 360px, dos columnas de 180px las fotos deja de apreciarse*/
     grid-auto-rows: 24rem;
   }
 
